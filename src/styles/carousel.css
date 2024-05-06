@@ -2,6 +2,8 @@
   background: none;
   border: none;
   position: absolute;
+  padding: 0;
+  margin: 0 0.6rem;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
@@ -14,7 +16,13 @@
 .carousel-button:after {
   color: white;
   border: none;
-  background: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.185);
+  border-radius: 50%;
+}
+
+.arrow{
+  font-size: 50px;
 }
 
 .next {
@@ -33,6 +41,7 @@
   z-index: 0;
   inset: 0;
   opacity: 0;
+  transition: all .0.5s ease;
 }
 
 .slide img {
@@ -42,8 +51,15 @@
   object-fit: cover;
   object-position: center;
   z-index: 0;
+  border-radius: 20px;
 }
 
 .active {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px){
+  .arrow{
+    font-size: 80px;
+  }
 }

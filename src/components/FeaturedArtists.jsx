@@ -7,7 +7,7 @@ export const FeaturedArtists = () => {
 
   return (
     <section className="featured">
-      <h3>Featured artists component</h3>
+      <h2>Featured artists</h2>
       <ul className="featured-list">
         {artistData.map((artist) => (
           <li key={artist.id} className="image-container">

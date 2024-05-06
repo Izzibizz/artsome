@@ -63,7 +63,7 @@ header {
   height: 12rem;
   background-color: #171717d5;
   position: absolute;
-  top: 8rem;
+  top: 100px;
   left: 0;
   justify-content: center;
   z-index: 999;
