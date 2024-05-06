@@ -26,8 +26,14 @@ export const Carousel = () => {
     }
   }
   const autoSlide = () => {
-    slideInterval= setInterval(nextSlide,intervalTime)
-}
+    slideInterval = setInterval(() => {
+      nextSlide(); // Advance to the next slide
+      if (slideIndex === artistData.length) {
+        // If we're at the end, reset to the first slide
+        setSlideIndex(1);
+      }
+    }, intervalTime);
+  }
 
 
      useEffect(() => {
