@@ -1,8 +1,18 @@
-# React + Vite
+<h1 align="center">
+  <a href="">
+    <img src="/public/artsome-banner.png" alt="Project Banner Image">
+  </a>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Artsome
 
-Currently, two official plugins are available:
+This frontend project is a continuation on the backend assignment Express API. IT is about creating a API using Exress.js for the first time. I chose to also build this website that fetches the data and displays the artists.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## The problem
+The API is extremely slow and I am facing certain limitations since this backend project was simple and not very complex - since it was a beginners project to learn the basics.
+
+Link to repo: https://github.com/Izzibizz/project-express-api
+Link to onRender: https://izabels-first-api.onrender.com
+
+## View it live
+https://artsome.netlify.app/
