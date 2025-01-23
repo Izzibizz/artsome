@@ -1,12 +1,29 @@
-import { Body } from './components/Body'
+import { Header } from "./components/Header"
+import { MainRoutes } from "./routes/MainRoutes";
+import { Footer } from "./components/Footer";
+import { ScrollToTop } from "./components/ScrollToTop";
+import { useArtistsStore } from "./store/useArtistsStore"
+import { useEffect } from "react"
 
-function App() {
+
+export const App = () => {
+
+  const { fetchArtists } = useArtistsStore()
+
+  useEffect(() => {
+    fetchArtists();
+  }, []);
 
   return (
     <>
-    < Body />
+    <ScrollToTop />
+    <div className="bg-blue-900 max-w-screen min-h-screen flex flex-col overflow-hidden ">
+      <Header />
+      <main className="flex-grow">
+        <MainRoutes />
+      </main>
+      <Footer />
+    </div>
     </>
-  )
-}
-
-export default App
+  );
+};
