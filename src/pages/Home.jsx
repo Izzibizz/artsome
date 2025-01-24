@@ -42,13 +42,17 @@ export const Home = () => {
   console.log(randomImages);
 
   return (
-    <section className="h-screen max-h-screen w-screen max-w-screen overflow-hidden relative">
+    <section className=" laptop:max-h-screen pb-20 laptop:pb-0 w-screen max-w-screen overflow-hidden relative flex flex-col">
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
       <img
         src={chosenBgImage?.images[0].image}
         alt={chosenBgImage ? chosenBgImage?.name : "artist"}
         className={` ${isHovered? "z-20 opacity-100 " : "z-10 opacity-20 laptop:opacity-30"} absolute  w-full max-w-full top-0 h-full max-h-full object-cover animate-zoomInOut`}
       />
-      <div className={` ${isHovered? "bg-opacity-80" : "bg-opacity-50"} absolute top-16 z-20 right-0 w-fit h-fit min-w-[40%] min-h-[17%] text-peach flex bg-white  items-end px-10 pb-4 border-b-2 `}
+      <div className={` ${isHovered? "bg-opacity-80" : "bg-opacity-50"} laptop:absolute mt-16 self-end laptop:mt-0 top-16 z-20 right-0 w-fit h-fit min-w-[40%] min-h-[30px] laptop:min-h-[15%] text-peach flex bg-white  items-end px-10 p-4 border-b-2 `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
         <div className="w-fit flex-col flex gap-4">
@@ -71,10 +75,8 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      {loading ? (
-        <Loading />
-      ) : (
-        <div className="z-10 relative h-screen ">
+      
+        <div className="z-10 relative h-fit laptop:h-screen ">
           {randomImages?.map((artist, index) => {
             const divPositions = [
               "laptop:z-30 w-full h-[150px] tablet:h-[160px] laptop:w-[200px] laptop:h-full top-48 laptop:top-40 laptop:left-[20%] object-cover laptop:border-r-2 border-t-2 laptop:border-t-0 laptop:border-l-2 laptop:justify-end animate-slideInLeft laptop:animate-slideUp ",
@@ -100,7 +102,7 @@ export const Home = () => {
             const imgSizeClass = imgSize[index] || "";
 
             return (
-              <div className={`${divPositionClass} flex absolute`} key={index}>
+              <div className={`${divPositionClass} flex laptop:absolute`} key={index}>
                 <img
                   src={artist?.images?.[0].image}
                   alt={artist?.name}
@@ -127,6 +129,7 @@ export const Home = () => {
             );
           })}
         </div>
+        </>
       )}
     </section>
   );
