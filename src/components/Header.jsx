@@ -1,11 +1,10 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-import logo from '/artsome-white.svg'
-
+import logo from "/artsome-white.svg";
 
 export const Header = () => {
-  const dropdownRef = useRef()
-  const buttonRef = useRef()
+  const dropdownRef = useRef();
+  const buttonRef = useRef();
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,41 +16,49 @@ export const Header = () => {
     setIsOpen(false);
   };
 
-// Close the menu when navigating to a new page
-useEffect(() => {
-  closeMenu();
-}, [location]);
+  // Close the menu when navigating to a new page
+  useEffect(() => {
+    closeMenu();
+  }, [location]);
 
- // Close the menu when clicking outside of it
-useEffect(() => {
-  const handleClickOutside = (event) => {
-    if (
-      dropdownRef.current && !dropdownRef.current.contains(event.target) &&
-      buttonRef.current && !buttonRef.current.contains(event.target)
-    ) {
-      closeMenu();
-    }
-  };
+  // Close the menu when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        closeMenu();
+      }
+    };
 
-   // Bind the event listener
-   document.addEventListener("mousedown", handleClickOutside);
-   return () => {
-     // Clean up the event listener
-     document.removeEventListener("mousedown", handleClickOutside);
-   };
- }, []);
-
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Clean up the event listener
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <header className="w-full fixed flex h-16 p-4 z-40 justify-between bg-white bg-opacity-30 items-center text-white">
-      <NavLink to="/" aria-label="Link to Home"><img src={logo} alt="artsome logo" id="logo" className="h-[20px] hover:scale-125 transform transition-transform duration-300 origin-center"/></NavLink>
+    <header className="w-full fixed flex h-16 p-4 laptop:pl-8 z-40 justify-between bg-white bg-opacity-30 items-center text-white">
+      <NavLink to="/" aria-label="Link to Home">
+        <img
+          src={logo}
+          alt="artsome logo"
+          id="logo"
+          className="h-[20px] laptop:h-[32px] hover:scale-125 transform transition-transform duration-300 origin-center"
+        />
+      </NavLink>
       <button
         ref={buttonRef}
         onClick={toggleMenu}
         aria-label="Toggle Menu"
         className="flex flex-col justify-center items-center z-50 "
       >
-       <span
+        <span
           className={`bg-white hover:bg-peach block transition-all duration-300 ease-out 
                       h-0.5 w-6 rounded-sm ${
                         isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
@@ -82,7 +89,13 @@ useEffect(() => {
               to="/artists"
               aria-label="Link to artists"
               onClick={toggleMenu}
-              className={({ isActive }) => ` ${isActive ? "underline" : "hover:scale-110 hover:text-peach transform transition-transform duration-300 origin-center"}`}
+              className={({ isActive }) =>
+                ` ${
+                  isActive
+                    ? "underline"
+                    : "hover:scale-110 hover:text-peach transform transition-transform duration-300 origin-center"
+                }`
+              }
             >
               <li>Artists</li>
             </NavLink>
@@ -90,15 +103,27 @@ useEffect(() => {
               to="/selected-work"
               aria-label="Link to selected"
               onClick={toggleMenu}
-              className={({ isActive }) => ` ${isActive ? "underline" : "hover:scale-110 hover:text-peach transform transition-transform duration-300 origin-center"}`}
+              className={({ isActive }) =>
+                ` ${
+                  isActive
+                    ? "underline"
+                    : "hover:scale-110 hover:text-peach transform transition-transform duration-300 origin-center"
+                }`
+              }
             >
               <li>Selected work</li>
             </NavLink>
-            <NavLink 
+            <NavLink
               to="/about"
               aria-label="Link to about"
               onClick={toggleMenu}
-              className={({ isActive }) => ` ${isActive ? "underline" : "hover:scale-110 hover:text-peach transform transition-transform duration-300 origin-center"}`}
+              className={({ isActive }) =>
+                ` ${
+                  isActive
+                    ? "underline"
+                    : "hover:scale-110 hover:text-peach transform transition-transform duration-300 origin-center"
+                }`
+              }
             >
               <li>About</li>
             </NavLink>
@@ -106,5 +131,5 @@ useEffect(() => {
         </div>
       )}
     </header>
-  )
-}
+  );
+};
