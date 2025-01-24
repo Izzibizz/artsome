@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        "background": "#FFFBF4",
-        "main-dark": "#693a17", 
+        "background": "#ffccb3",
+        "dark-brown": "#662200", 
         "main-white": "#FFFBF4",
         "beige": "#EBD2BC",
         "peach": "#BC6755",
@@ -41,7 +41,15 @@ export default {
         slideUp: {
           "0%": { transform: "translateY(100%)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
-        }, 
+        },
+        slideInRight: {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInLeft: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
         zoomInOut: {
        '0%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.12)' },
@@ -53,6 +61,8 @@ export default {
         fadeOut: 'fadeOut 3s ease-out',
         fadeInOut: 'fadeInOut 3s ease-in-out infinite',
         slideUp: "slideUp 1.5s ease-out forwards",
+        slideInRight:"slideInRight 1.5s ease-out forwards",
+        slideInLeft:"slideInLeft 1.5s ease-out forwards",
         zoomInOut: 'zoomInOut 40s ease-in-out infinite',
       },
     },

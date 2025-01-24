@@ -17,7 +17,7 @@ export const App = () => {
   return (
     <>
     <ScrollToTop />
-    <div className="bg-blue-900 max-w-screen min-h-screen flex flex-col overflow-hidden ">
+    <div className="bg-background max-w-screen min-h-screen flex flex-col overflow-hidden ">
       <Header />
       <main className="flex-grow">
         <MainRoutes />
