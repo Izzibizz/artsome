@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-import logo from "/artsome-white.svg";
+import logo from "/artsome-white-peach.jpg";
 
 export const Header = () => {
   const dropdownRef = useRef();
@@ -43,13 +43,13 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="w-full fixed flex h-16 p-4 laptop:pl-8 z-40 justify-between bg-white bg-opacity-30 items-center text-white">
+    <header className="w-full fixed flex h-16 py-4 pr-4 z-40 justify-between bg-white bg-opacity-30 items-center text-white">
       <NavLink to="/" aria-label="Link to Home">
         <img
           src={logo}
           alt="artsome logo"
           id="logo"
-          className="h-[20px] laptop:h-[32px] hover:scale-125 transform transition-transform duration-300 origin-center"
+          className="h-16 w-[170px] object-cover hover:scale-125 transform transition-transform duration-300 origin-center"
         />
       </NavLink>
       <button

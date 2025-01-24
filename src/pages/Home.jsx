@@ -33,6 +33,7 @@ export const Home = () => {
   
       // Set the chosenBgImage to the new index 0
       setChosenBgImage(clickedImage);
+      window.scrollTo(0, 0);
   
       return updatedImages;
     });
@@ -86,7 +87,7 @@ export const Home = () => {
         <div className="z-10 relative h-fit laptop:h-screen flex flex-col gap-8">
           {randomImages?.map((artist, index) => {
             const divPositions = [
-              "laptop:z-30 w-full h-[230px] tablet:h-[160px] laptop:w-[400px] laptop:h-full top-48 laptop:top-48 laptop:left-[20%] object-cover laptop:border-r-2 border-t-2 laptop:border-t-0 laptop:border-l-2 laptop:justify-end animate-slideInLeft laptop:animate-slideUp ",
+              "laptop:z-30 w-full h-[230px] mb-20 tablet:h-[350px] laptop:w-[400px] laptop:h-full top-48 laptop:top-48 laptop:left-[20%] object-cover laptop:border-r-2 border-t-2 laptop:border-t-0 laptop:border-l-2 laptop:justify-end animate-slideInLeft laptop:animate-slideUp ",
               "z-10 h-[180px] tablet:h-[200px] laptop:h-[180px] w-screen top-[40%] laptop:top-1/3 right-0 items-end border-t-2 flex-col animate-slideInRight",
               "z-10 w-full h-[150px] tablet:h-[220px] laptop:w-[170px] laptop:h-screen bottom-0 left-0 border-t-2  laptop:border-t-0 laptop:border-r-2 items-end laptop:justify-end animate-slideInLeft laptop:animate-slideUp ",
               "z-10 w-full h-[120px] tablet:h-[180px] laptop:w-[180px] laptop:h-screen bottom-[20%] tablet:bottom-1/4 laptop:bottom-0 left-0 laptop:left-1/2 laptop:border-r-2 border-t-2 laptop:border-t-0 items-end laptop:justify-end animate-slideInLeft laptop:animate-slideUp",
