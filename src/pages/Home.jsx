@@ -50,7 +50,7 @@ export const Home = () => {
   console.log(randomImages);
 
   return (
-    <section className=" laptop:max-h-screen pb-20 laptop:pb-0 w-screen max-w-screen overflow-hidden relative flex flex-col">
+    <section className=" laptop:max-h-screen pb-20 laptop:pb-0 w-screen max-w-screen overflow-hidden relative flex flex-col font-heading ">
       {loading ? (
         <Loading />
       ) : (
@@ -60,14 +60,14 @@ export const Home = () => {
         alt={chosenBgImage ? chosenBgImage?.name : "artist"}
         className={` ${isHovered? "z-20 opacity-100 " : "z-10 opacity-20 laptop:opacity-30"} absolute  w-full max-w-full top-0 h-full max-h-full object-cover animate-zoomInOut`}
       />
-      <div className={` ${isHovered? "bg-opacity-80" : "bg-opacity-50"} laptop:absolute mt-16 self-end laptop:mt-0 top-16 z-20 right-0 w-fit h-fit min-w-[80%] min-h-[30px] laptop:min-h-[15%] text-peach flex bg-white  items-end px-10 p-4 border-b-2 `}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}>
-        <div className="w-fit flex-col flex gap-4">
+      <div className={` ${isHovered? "bg-opacity-80" : "bg-opacity-50"} laptop:absolute mt-16 self-end laptop:mt-0 top-16 z-20 right-0 w-fit h-fit min-w-[80%] min-h-[30px] laptop:min-h-[15%] text-peach flex bg-white  items-end px-10 p-4 border-b-2 `}>
+        <div className="w-fit flex-col flex gap-4"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}>
         <NavLink
               to={`/artists/${chosenBgImage?.name
                 .replace(/\s+/g, "-")
-                .toLowerCase()}`}><h2 className="text-2xl tablet:text-[50px] laptop:text-[45px] ">
+                .toLowerCase()}`}><h2 className="text-4xl tablet:text-[50px] laptop:text-[45px] ">
             {chosenBgImage?.name}
           </h2></NavLink>
           <div className="flex gap-1 items-center self-start z-30 group">
@@ -92,11 +92,11 @@ export const Home = () => {
               "z-10 w-full h-[150px] tablet:h-[220px] laptop:w-[170px] laptop:h-screen bottom-0 left-0 border-t-2  laptop:border-t-0 laptop:border-r-2 items-end laptop:justify-end animate-slideInLeft laptop:animate-slideUp ",
               "z-10 w-full h-[120px] tablet:h-[180px] laptop:w-[180px] laptop:h-screen bottom-[20%] tablet:bottom-1/4 laptop:bottom-0 left-0 laptop:left-1/2 laptop:border-r-2 border-t-2 laptop:border-t-0 items-end laptop:justify-end animate-slideInLeft laptop:animate-slideUp",
             ];
-            const imgSize = [
+            const imgStyle = [
               "w-[70%] h-full laptop:w-full laptop:max-h-[400px] self-start border-t-2",
-              "w-[33%] h-full max-w-[400px] border-r-2 border-l-2",
-              "w-[45%] h-full laptop:w-full max-h-[350px] border-t-2",
-              "w-1/3 h-full laptop:w-full max-h-[250px] border-l-2",
+              "w-[33%] h-full max-w-[400px] border-r-2 border-l-2  hover:scale-110 hover:border-2",
+              "w-[45%] h-full laptop:w-full max-h-[350px] border-t-2  hover:scale-110 hover:border-2",
+              "w-1/3 h-full laptop:w-full max-h-[250px] border-l-2  hover:scale-110 hover:border-2",
             ];
             const textPositions = [
               "hidden",
@@ -107,21 +107,21 @@ export const Home = () => {
 
             const divPositionClass = divPositions[index] || "";
             const textPositionClass = textPositions[index] || "";
-            const imgSizeClass = imgSize[index] || "";
+            const imgStyleClass = imgStyle[index] || "";
 
             return (
               <div className={`${divPositionClass} flex laptop:absolute`} key={index}>
                 <img
                   src={artist?.images?.[0].image}
                   alt={artist?.name}
-                  className={` ${imgSizeClass} object-cover cursor-pointer absolute hover:scale-105 transform transition-transform duration-300 origin-center`}
+                  className={` ${imgStyleClass} object-cover z-40 cursor-pointer absolute transform transition-transform duration-300 origin-center`}
                   onClick={() => changeImages(index)}
                 />
                 <div
-                  className={` ${textPositionClass} absolute w-[230px] h-fit z-40 text-white bg-peach bg-opacity-50 p-4 cursor-pointer `}
+                  className={` ${textPositionClass} absolute w-[200px] h-fit text-white bg-peach bg-opacity-50 p-4 cursor-pointer `}
                 >
                   <h3 className="text-xl">{artist?.name}</h3>
-                  <div className="flex gap-1 items-center self-start group">
+                  <div className="flex gap-1 items-center self-start group laptop:hidden">
                     <MdOutlineArrowOutward className="group-hover:text-dark-brown" />
                     <NavLink
                       to={`/artists/${chosenBgImage?.name

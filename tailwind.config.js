@@ -16,8 +16,8 @@ export default {
         
       },
       fontFamily: {
-        body: ["Thasadith", "sans-serif"],
-        heading: ["Fahkwang", "sans-serif"],
+        serif: ["Anaheim", "serif"],
+        heading: ["Quicksand", "sans-serif"],
       },
       screens: {
         tablet: "600px", 
