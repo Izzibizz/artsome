@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-import logo from "/artsome-white-peach.jpg";
+import logo from "/artsome-dark.svg";
 
 export const Header = () => {
   const dropdownRef = useRef();
@@ -43,13 +43,13 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="w-full fixed flex h-16 py-4 pr-4 z-40 justify-between bg-white bg-opacity-30 items-center text-white">
+    <header className="w-full fixed flex h-16 p-4 z-40 justify-between bg-white bg-opacity-30 items-center text-white">
       <NavLink to="/" aria-label="Link to Home">
         <img
           src={logo}
           alt="artsome logo"
           id="logo"
-          className="h-16 w-[170px] object-cover hover:scale-125 transform transition-transform duration-300 origin-center"
+          className="h-10 object-cover hover:scale-125 transform transition-transform duration-300 origin-center"
         />
       </NavLink>
       <button
@@ -82,7 +82,7 @@ export const Header = () => {
       {isOpen && (
         <div
           ref={dropdownRef}
-          className={`absolute laptop:top-4 laptop:right-12 top-0 z-40 right-0 w-full h-screen laptop:w-fit laptop:h-fit text-xl bg-background bg-opacity-90 laptop:bg-opacity-0 laptop:rounded-bl-xl flex justify-center items-center text-black laptop:text-white`}
+          className={`absolute laptop:top-4 laptop:right-12 top-0 z-40 right-0 w-full h-screen laptop:w-fit laptop:h-fit text-xl bg-background bg-opacity-90 laptop:bg-opacity-0 laptop:rounded-bl-xl flex justify-center items-center text-white laptop:text-white`}
         >
           <ul className="flex flex-col laptop:flex-row items-center align-middle laptop:items-end gap-6 laptop:gap-10 laptop:pb-4 laptop:px-6 font-light">
             <NavLink
