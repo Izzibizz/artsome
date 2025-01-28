@@ -103,7 +103,7 @@ export const Header = () => {
               <li>Artists</li>
             </NavLink>
             <NavLink
-              to="/selected-work"
+              to="/artist/marguerite_humeau"
               aria-label="Link to selected"
               onClick={toggleMenu}
               className={({ isActive }) =>
