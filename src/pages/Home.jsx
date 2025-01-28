@@ -5,7 +5,7 @@ import { Loading } from "../components/Loading";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 export const Home = () => {
-  const { artistData, loading } = useArtistsStore();
+  const { artistData, loading, setBgWhite} = useArtistsStore();
   const [chosenBgImage, setChosenBgImage] = useState(null);
   const [randomImages, setRandomImages] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -44,6 +44,7 @@ export const Home = () => {
       const shuffled = getRandomImages(artistData, 4);
       setRandomImages(shuffled);
       setChosenBgImage(shuffled?.[0]);
+      setBgWhite(false)
     }
   }, [artistData]);
 
@@ -65,7 +66,7 @@ export const Home = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}>
         <NavLink
-              to={`/artists/${chosenBgImage?.name
+              to={`/artist/${chosenBgImage?.name
                 .replace(/\s+/g, "-")
                 .toLowerCase()}`}><h2 className="text-4xl tablet:text-[50px] font-fat laptop:text-[45px] ">
             {chosenBgImage?.name}
@@ -73,9 +74,13 @@ export const Home = () => {
           <div className="flex gap-1 items-center self-start z-30 group">
             <MdOutlineArrowOutward className="group-hover:text-white" />
             <NavLink
-              to={`/artists/${chosenBgImage?.name
-                .replace(/\s+/g, "-")
-                .toLowerCase()}`}
+              to={`/artist/${chosenBgImage?.name
+                .toLowerCase()
+                .normalize("NFD") 
+              .replace(/[\u0300-\u036f]/g, "") 
+              .replace(/ /g, "_") 
+              .replace(/[^a-z0-9_]/g, "") 
+              }`}
               className="relative text-xl laptop:text-lg italic after:content-[''] after:block after:w-0 after:h-[1px] after:bg-white after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 group-hover:after:w-full"
             >
               Read more
@@ -124,7 +129,7 @@ export const Home = () => {
                   <div className="flex gap-1 items-center self-start group laptop:hidden">
                     <MdOutlineArrowOutward className="group-hover:text-dark-brown" />
                     <NavLink
-                      to={`/artists/${chosenBgImage?.name
+                      to={`/artist/${chosenBgImage?.name
                         .replace(/\s+/g, "-")
                         .toLowerCase()}`}
                       className="relative text-lg italic after:content-[''] after:block after:w-0 after:h-[1px] after:bg-dark-brown after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 group-hover:after:w-full"

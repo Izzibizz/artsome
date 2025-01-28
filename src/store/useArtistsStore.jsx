@@ -7,8 +7,10 @@ export const useArtistsStore = create((set) => ({
     imageToDisplay: [],
     loading: false,
     error: null,
+    bgWhite: false,
 
-    setImageToDisplay: (input) => set({imageToDisplay: input}),
+    setImageToDisplay: (input) => set({ imageToDisplay: input }),
+    setBgWhite: (input) => set({ bgWhite: input }),
 
    fetchArtists: async () => {
   set({ loading: true, error: null }); // Set loading and clear error

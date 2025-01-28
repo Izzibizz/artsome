@@ -12,6 +12,7 @@ export default {
         "main-white": "#FFFBF4",
         "beige": "#EBD2BC",
         "peach": "#BC6755",
+        "light-peach": "#e0b8b0",
         "green": "#BEB8A0" 
         
       },

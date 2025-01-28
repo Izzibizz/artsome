@@ -11,7 +11,7 @@ export const MainRoutes = () => {
         <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/artists" element={<AllArtists/>}/>
-        <Route path="/artists/:id" element={<EachArtistPage/>}/>
+        <Route path="/artist/:id" element={<EachArtistPage/>}/>
         <Route path="/*" element={<NotFound/>}/>
         </Routes>
     </div>
