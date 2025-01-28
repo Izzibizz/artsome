@@ -15,7 +15,7 @@ export const SwiperComp = () => {
         <Swiper
           modules={[Navigation, A11y, Autoplay]}
           spaceBetween={10}
-          slidesPerView={6}
+          slidesPerView={4}
           speed={1200}
           loop
           autoplay={{
@@ -33,6 +33,7 @@ export const SwiperComp = () => {
               slidesPerView: 4
             },
         }}
+        className="w-full"
         >
          {singleArtist?.[0].images.map((image, index) => (
                     <SwiperSlide key={index}>
