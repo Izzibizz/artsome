@@ -49,7 +49,7 @@ export const Header = () => {
           src={logo}
           alt="artsome logo"
           id="logo"
-          className="h-6 tablet:h-10 object-cover hover:scale-125 transform transition-transform duration-300 origin-center"
+          className="h-6 tablet:h-10 object-cover hover:scale-110 transform transition-transform duration-300 origin-center"
         />
       </NavLink>
       <button

@@ -3,6 +3,7 @@ import { create } from 'zustand';
 export const useArtistsStore = create((set) => ({
 
     artistData: [],
+    singleArtist: [],
     loading: false,
     error: null,
 
@@ -33,4 +34,27 @@ export const useArtistsStore = create((set) => ({
   } finally {
     set({ loading: false }); // Set loading to false when done
   }
-}}))
+},
+fetchSingleArtist: async (id) => {
+  set({ loading: true });
+
+  const URL_singleArtist = `https://izabels-first-api.onrender.com/artists/${id}`;
+  try {
+    const response = await fetch(URL_singleArtist, {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    });
+    if (!response.ok) {
+      throw new Error("Could not fetch");
+    }
+    const data = await response.json();
+    console.log("Fetch single product", data);
+    set({ singleArtist: data });
+  } catch (error) {
+    console.error("error:", error);
+    set({ error: error });
+  } finally {
+    set({ loading: false });
+  }
+}
+}))
