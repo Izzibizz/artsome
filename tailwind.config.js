@@ -18,6 +18,7 @@ export default {
       fontFamily: {
         serif: ["Anaheim", "serif"],
         heading: ["Quicksand", "sans-serif"],
+        fat: ["Bakbak One", "serif"],
       },
       screens: {
         tablet: "600px", 

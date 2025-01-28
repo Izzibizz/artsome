@@ -7,13 +7,23 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 export const EachArtistPage = () => {
 
-  const { singleArtist, fetchSingleArtist, loading } = useArtistsStore();
+  const { singleArtist, fetchSingleArtist, loading, imageToDisplay } = useArtistsStore();
   const { id } = useParams()
   const artistToDisplay = id.replace(/-/g, "_").toLowerCase() 
 
   useEffect(() => {
     fetchSingleArtist(artistToDisplay);
+    
   }, [artistToDisplay]);
+
+  useEffect(() => {
+    if (singleArtist?.[0]?.images) {
+        singleArtist[0].images.forEach((img) => {
+            const preloadImage = new Image();
+            preloadImage.src = img.image; // Preload full-sized image
+        });
+    }
+}, [singleArtist]);
 
   console.log(artistToDisplay, singleArtist)
 
@@ -25,10 +35,10 @@ export const EachArtistPage = () => {
             singleArtist.length > 0 && (
             <div className=" w-11/12 laptop:w-8/12 mx-auto mt-20 laptop:mt-32 flex flex-col h-full gap-4">
                <div className=" flex flex-col laptop:flex-row gap-4 ">
-               <img src={singleArtist?.[0].images?.[0].image} alt={singleArtist?.[0].images?.[0].alt} className="w-full laptop:w-2/3 aspect-[4/3] object-cover"/>
+               <img src={imageToDisplay.image} alt={imageToDisplay.alt} className="w-full laptop:w-2/3 aspect-[4/3] object-cover"/>
                <div className="w-full laptop:w-1/3 flex flex-col gap-6 laptop:gap-4">
                <SwiperComp />
-               <h3 className="text-4xl laptop:text-[70px] text-dark-brown laptop:hidden">{singleArtist?.[0].name}</h3>
+               <h3 className="text-4xl tablet:text-[50px] font-fat text-peach laptop:hidden">{singleArtist?.[0].name}</h3>
                <ul>
                <li>Year of birth: <span className="italic">{singleArtist?.[0].year_of_birth}</span></li>
                <li>Origin: <span className="italic">{singleArtist?.[0].birthplace}</span></li>
@@ -45,7 +55,7 @@ export const EachArtistPage = () => {
                </ul>
                </div>
                </div>
-               <h3 className="text-4xl laptop:text-[70px] text-dark-brown hidden laptop:block">{singleArtist?.[0].name}</h3>
+               <h3 className="text-sm font-fat laptop:text-[130px] text-peach hidden laptop:block">{singleArtist?.[0].name}</h3>
       </div>))}
     </section>
   )

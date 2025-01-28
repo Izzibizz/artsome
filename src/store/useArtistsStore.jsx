@@ -4,8 +4,11 @@ export const useArtistsStore = create((set) => ({
 
     artistData: [],
     singleArtist: [],
+    imageToDisplay: [],
     loading: false,
     error: null,
+
+    setImageToDisplay: (input) => set({imageToDisplay: input}),
 
    fetchArtists: async () => {
   set({ loading: true, error: null }); // Set loading and clear error
@@ -49,7 +52,10 @@ fetchSingleArtist: async (id) => {
     }
     const data = await response.json();
     console.log("Fetch single product", data);
-    set({ singleArtist: data });
+    set({ singleArtist: data,  imageToDisplay: {
+      image: data[0]?.images?.[0]?.image,
+      alt: data[0]?.images?.[0]?.alt,
+    } });
   } catch (error) {
     console.error("error:", error);
     set({ error: error });

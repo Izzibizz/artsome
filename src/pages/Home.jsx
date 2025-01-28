@@ -67,7 +67,7 @@ export const Home = () => {
         <NavLink
               to={`/artists/${chosenBgImage?.name
                 .replace(/\s+/g, "-")
-                .toLowerCase()}`}><h2 className="text-4xl tablet:text-[50px] laptop:text-[45px] ">
+                .toLowerCase()}`}><h2 className="text-4xl tablet:text-[50px] font-fat laptop:text-[45px] ">
             {chosenBgImage?.name}
           </h2></NavLink>
           <div className="flex gap-1 items-center self-start z-30 group">

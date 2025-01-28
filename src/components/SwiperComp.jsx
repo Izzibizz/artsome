@@ -9,7 +9,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/free-mode";
 
 export const SwiperComp = () => {
-    const { singleArtist } = useArtistsStore()
+    const { singleArtist, setImageToDisplay } = useArtistsStore()
 
     return (
         <Swiper
@@ -35,9 +35,9 @@ export const SwiperComp = () => {
         }}
         className="w-full"
         >
-         {singleArtist?.[0].images.map((image, index) => (
+         {singleArtist?.[0].images.map((img, index) => (
                     <SwiperSlide key={index}>
-                      <img src={image.thumbnail} alt={image.alt} className="object-cover aspect-[4/3]" />
+                      <img src={img.thumbnail} alt={img.alt} className="object-cover aspect-[4/3] cursor-pointer" onClick={() => setImageToDisplay({image:img.image, alt:img.alt})}/>
                     </SwiperSlide>
                   ))}
         </Swiper>
