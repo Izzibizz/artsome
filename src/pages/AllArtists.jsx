@@ -44,14 +44,14 @@ export const AllArtists = () => {
     <section className="w-11/12 laptop:w-8/12 mx-auto mt-20 laptop:mt-32 mb-20 flex flex-col h-full gap-4 font-heading">
       <h3 className="text-4xl text-peach font-fat text-end">Artists</h3>
 
-<div className="flex bg-peach bg-opacity-60 flex-wrap gap-2 laptop:gap-4 p-2 items-center justify-end text-xs">
+<div className="flex bg-peach bg-opacity-60 flex-wrap gap-2 laptop:gap-4 p-2 items-center justify-end text-xs grid grid-cols-2 laptop:flex">
       {/* Sorting Buttons */}
         <button
           onClick={() => {
             setSortBy("name");
             setSortOrder(sortOrder === "asc" ? "desc" : "asc");
           }}
-          className="p-2 h-fit bg-peach text-white"
+          className="p-2 h-fit bg-peach text-white "
         >
           Sort by Name {sortOrder === "asc" ? "↑" : "↓"}
         </button>
@@ -69,7 +69,7 @@ export const AllArtists = () => {
         <select
           value={selectedGender}
           onChange={(e) => setSelectedGender(e.target.value)}
-          className="p-2 h-fit bg-peach text-main-white"
+          className="p-2 h-fit bg-peach text-main-white appearance-none rounded-none text-center"
         >
           <option value="">Filter by Gender</option>
           <option value="Male">Male</option>
@@ -80,7 +80,7 @@ export const AllArtists = () => {
         <select
           value={selectedTechnique}
           onChange={(e) => setSelectedTechnique(e.target.value)}
-          className="p-2 h-fit bg-peach text-main-white"
+          className="p-2 h-fit bg-peach text-main-white appearance-none rounded-none text-center"
         >
           <option value="">Filter by Technique</option>
           {["Painting", "Sculpture", "Photography", "Installation", "Video", "Silhouette", "Drawing", "VR", "3D", "Film", "Mixed media", "Collage", "Digital art", "Performance"].map((technique) => (
