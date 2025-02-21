@@ -61,7 +61,7 @@ export const Home = () => {
         alt={chosenBgImage ? chosenBgImage?.name : "artist"}
         className={` ${isHovered? "z-20 opacity-100 " : "z-10 opacity-20 laptop:opacity-30"} absolute  w-full max-w-full top-0 h-full max-h-full object-cover animate-zoomInOut`}
       />
-      <div className={` ${isHovered? "bg-opacity-80" : "bg-opacity-50"} laptop:absolute mt-32 self-end laptop:mt-0 top-16 z-20 right-0 w-fit h-fit min-w-[80%] min-h-[30px] laptop:min-h-[15%] text-peach flex bg-white items-end px-10 p-4 laptop:border-b-2 `}>
+      <div className={` ${isHovered? "bg-opacity-80 min-w-[20%] " : "bg-opacity-50 min-w-[100%]"} transition-all transform duration-300 laptop:absolute mt-32 self-end laptop:mt-0 top-16 left-[200px] z-20 h-[150px] text-peach flex bg-white items-end px-10 p-4 laptop:border-b-2 `}>
         <div className="w-fit flex-col flex gap-4"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}>
@@ -92,7 +92,7 @@ export const Home = () => {
         <div className="z-10 relative h-fit laptop:h-screen flex flex-col gap-8">
           {randomImages?.map((artist, index) => {
             const divPositions = [
-              "laptop:z-30 w-full h-[230px] mb-20 tablet:h-[350px] laptop:w-[400px] laptop:h-full top-48 laptop:top-48 laptop:left-[20%] object-cover laptop:border-r-2 border-t-2 laptop:border-t-0 laptop:border-l-2 laptop:justify-end animate-slideInLeft laptop:animate-slideUp ",
+              "laptop:z-30 w-full h-[230px] mb-20 tablet:h-[350px] laptop:w-[400px] laptop:h-full top-48 laptop:top-[214px] laptop:left-[20%] object-cover laptop:border-r-2 border-t-2 laptop:border-t-0 laptop:border-l-2 laptop:justify-end animate-slideInLeft laptop:animate-slideUp ",
               "z-10 h-[180px] tablet:h-[200px] laptop:h-[180px] w-screen top-[40%] laptop:top-1/3 right-0 items-end border-t-2 flex-col animate-slideInRight",
               "z-10 w-full h-[150px] tablet:h-[220px] laptop:w-[170px] laptop:h-screen bottom-0 left-0 border-t-2  laptop:border-t-0 laptop:border-r-2 items-end laptop:justify-end animate-slideInLeft laptop:animate-slideUp ",
               "z-10 w-full h-[120px] tablet:h-[180px] laptop:w-[180px] laptop:h-screen bottom-[20%] tablet:bottom-1/4 laptop:bottom-0 left-0 laptop:left-1/2 laptop:border-r-2 border-t-2 laptop:border-t-0 items-end laptop:justify-end animate-slideInLeft laptop:animate-slideUp",
@@ -105,9 +105,9 @@ export const Home = () => {
             ];
             const textPositions = [
               "hidden",
-              "bottom-0 right-[33%] laptop:right-0 laptop:bottom-[-50%]",
-              "right-0 laptop:right-[-138%]",
-              "bottom-[-20%] laptop:bottom-[15%] left-[33%] laptop:left-[-129%]",
+              "bottom-0 right-[33%] laptop:right-0 laptop:bottom-[-34%]",
+              "left-[45%] laptop:right-0 laptop:bottom-[350px] ",
+              "bottom-[-20%] laptop:bottom-[15%] left-[33%] laptop:left-[180px]",
             ];
 
             const divPositionClass = divPositions[index] || "";
@@ -119,11 +119,11 @@ export const Home = () => {
                 <img
                   src={artist?.images?.[0].image}
                   alt={artist?.name}
-                  className={` ${imgStyleClass} object-cover z-40 cursor-pointer absolute transform transition-transform duration-300 origin-center`}
+                  className={` ${imgStyleClass} object-cover z-30 cursor-pointer absolute transform transition-transform duration-300 origin-center`}
                   onClick={() => changeImages(index)}
                 />
                 <div
-                  className={` ${textPositionClass} absolute w-[200px] h-fit text-white bg-peach bg-opacity-50 p-4 cursor-pointer `}
+                  className={` ${textPositionClass} absolute z-60 w-[200px] h-fit w-fit text-white bg-peach bg-opacity-50 p-4 cursor-pointer `}
                 >
                   <h3 className="text-xl">{artist?.name}</h3>
                   <div className="flex gap-1 items-center self-start group laptop:hidden">
