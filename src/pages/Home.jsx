@@ -51,7 +51,7 @@ export const Home = () => {
   console.log(randomImages);
 
   return (
-    <section className="laptop:max-h-screen pb-20 laptop:pb-0 w-screen max-w-screen overflow-hidden relative flex flex-col font-heading ">
+    <section className="laptop:max-h-screen pb-20 laptop:pb-0 w-screen max-w-screen overflow-hidden relative flex flex-col font-heading animate-fadeIn">
       {loading ? (
         <Loading />
       ) : (

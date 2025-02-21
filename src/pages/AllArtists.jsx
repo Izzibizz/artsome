@@ -41,7 +41,7 @@ export const AllArtists = () => {
   });
 
   return (
-    <section className="w-11/12 laptop:w-8/12 mx-auto mt-20 laptop:mt-32 mb-20 flex flex-col h-full gap-4 font-heading">
+    <section className="w-11/12 laptop:w-8/12 mx-auto mt-20 laptop:mt-32 mb-20 flex flex-col h-full gap-4 font-heading animate-fadeIn">
       <h3 className="text-4xl text-peach font-fat text-end">Artists</h3>
 
 <div className="flex bg-peach bg-opacity-60 flex-wrap gap-2 laptop:gap-4 p-2 items-center justify-end text-xs grid grid-cols-2 laptop:flex">

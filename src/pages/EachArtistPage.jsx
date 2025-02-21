@@ -55,7 +55,7 @@ export const EachArtistPage = () => {
   console.log(artistData)
 
   return (
-    <section className="bg-white min-h-screen pb-10 px-6 w-screen max-w-screen overflow-hidden relative flex flex-col font-heading gap-12">
+    <section className="bg-white min-h-screen pb-10 px-6 w-screen max-w-screen overflow-hidden relative flex flex-col font-heading gap-12 animate-fadeIn">
           {loading ? (
             <Loading />
           ) : (
