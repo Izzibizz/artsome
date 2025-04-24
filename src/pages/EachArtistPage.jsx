@@ -63,7 +63,7 @@ export const EachArtistPage = () => {
               <>
             <div className=" w-11/12 laptop:w-8/12 mx-auto mt-20 laptop:mt-32 flex flex-col gap-4">
                <div className=" flex flex-col laptop:flex-row gap-4 ">
-               <img src={imageToDisplay.image} alt={imageToDisplay.alt} className="w-full laptop:w-2/3 aspect-[4/3] object-cover"/>
+               <img src={imageToDisplay.image} alt={imageToDisplay.alt} className="w-full laptop:w-2/3 laptop:h-[600px] aspect-[4/3] object-cover"/>
                <div className="w-full laptop:w-1/3 flex flex-col gap-6 laptop:gap-4 laptop:bg-light-peach laptop:p-4">
                <SwiperComp />
                <h3 className="text-4xl tablet:text-[50px] font-fat text-peach laptop:hidden">{singleArtist?.[0].name}</h3>
