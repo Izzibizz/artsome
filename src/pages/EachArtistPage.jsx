@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, NavLink } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { SwiperComp } from "../components/SwiperComp";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { toSlug } from "../utils/toSlug";
@@ -7,6 +7,7 @@ import { artistData } from "../data/artistData";
 
 export const EachArtistPage = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [singleArtist, setSingleArtist] = useState(null);
   const [prevArtist, setPrevArtist] = useState(null);
   const [nextArtist, setNextArtist] = useState(null);
@@ -14,6 +15,26 @@ export const EachArtistPage = () => {
     image: singleArtist?.images?.[0]?.image || "",
     alt: singleArtist?.images?.[0]?.alt || "",
   });
+  const [fadeIn, setFadeIn] = useState(true);
+
+  const handleNextPrev = (artist) => {
+  if (!artist) return;
+
+  // 1. Preload image
+  const img = new Image();
+  img.src = artist.images[0].image;
+
+  // 2. Trigger fade-out, byt imageToDisplay direkt
+  setFadeIn(false);
+  setTimeout(() => {
+    setImageToDisplay({ image: artist.images[0].image, alt: artist.images[0].alt });
+    setFadeIn(true);
+
+    // 3. Byt URL (React Router)
+    navigate(`/artist/${toSlug(artist.name)}`);
+  }, 200); // match durationen på din fade-out
+};
+
 
   useEffect(() => {
     const artist = artistData.find((a) => toSlug(a.name) === id);
@@ -37,17 +58,24 @@ export const EachArtistPage = () => {
     }
   }, [singleArtist]);
 
-  useEffect(() => {  singleArtist?.images.forEach(img => {
-      const preloaded = new Image();
-      preloaded.src = img.image;
-    })})
+  useEffect(() => {
+    artistData.forEach((artist) => {
+      artist.images.forEach((img) => {
+        const preload = new Image();
+        preload.src = img.image;
+      });
+    });
+  }, []);
+
 
   if (!singleArtist) return <p>Artist not found</p>;
 
   console.log(artistData, singleArtist, imageToDisplay);
 
   return (
-    <section className="bg-white min-h-screen pb-10 px-6 w-screen max-w-screen overflow-hidden relative flex flex-col font-heading gap-12 animate-fadeIn">
+    <section
+      className={`bg-white min-h-screen pb-10 px-6 w-screen max-w-screen overflow-hidden relative flex flex-col font-heading gap-12 animate-fadeIn ${`transition-opacity duration-300 ${fadeIn ? "opacity-100" : "opacity-0"}`}`}
+    >
       {singleArtist && (
         <>
           <div className=" w-11/12 laptop:w-8/12 mx-auto mt-20 laptop:mt-32 flex flex-col gap-4">
@@ -104,28 +132,18 @@ export const EachArtistPage = () => {
             </h3>
           </div>
           <div className="flex justify-between mt-6 text-sm tablet:text-base">
-            <NavLink
-              to={`/artist/${prevArtist?.name
-                .toLowerCase()
-                .normalize("NFD")
-                .replace(/[\u0300-\u036f]/g, "")
-                .replace(/ /g, "_")
-                .replace(/[^a-z0-9_]/g, "")}`}
+            <button
+              onClick={() => handleNextPrev(prevArtist)}
               className="text-dark-brown hover:underline"
             >
               ← {prevArtist?.name}
-            </NavLink>
-            <NavLink
-              to={`/artist/${nextArtist?.name
-                .toLowerCase()
-                .normalize("NFD")
-                .replace(/[\u0300-\u036f]/g, "")
-                .replace(/ /g, "_")
-                .replace(/[^a-z0-9_]/g, "")}`}
-              className="text-dark-brown hover:underline"
+            </button>
+            <button
+             onClick={() => handleNextPrev(nextArtist)}
+              className="text-dark-brown hover:underonClick={() => handleNextPrev(prevArtist)}line"
             >
               {nextArtist?.name} →
-            </NavLink>
+            </button>
           </div>
         </>
       )}
