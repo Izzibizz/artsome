@@ -2,17 +2,10 @@ import { Header } from "./components/Header"
 import { MainRoutes } from "./routes/MainRoutes";
 import { Footer } from "./components/Footer";
 import { ScrollToTop } from "./components/ScrollToTop";
-import { useArtistsStore } from "./store/useArtistsStore"
-import { useEffect } from "react"
+
 
 
 export const App = () => {
-
-  const { fetchArtists } = useArtistsStore()
-
-  useEffect(() => {
-    fetchArtists();
-  }, []);
 
   return (
     <>

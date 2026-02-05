@@ -1,5 +1,4 @@
 import { Navigation, A11y, Autoplay } from 'swiper/modules';
-import { useArtistsStore } from "../store/useArtistsStore";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -8,8 +7,7 @@ import 'swiper/css/navigation';
 import "swiper/css/effect-fade";
 import "swiper/css/free-mode";
 
-export const SwiperComp = () => {
-    const { singleArtist, setImageToDisplay } = useArtistsStore()
+export const SwiperComp = ({singleArtist, setImageToDisplay}) => {
 
     return (
         <Swiper
@@ -25,7 +23,7 @@ export const SwiperComp = () => {
           effect="fade"
         className="w-full"
         >
-         {singleArtist?.[0].images.map((img, index) => (
+         {singleArtist?.images?.map((img, index) => (
                     <SwiperSlide key={index}>
                       <img src={img.thumbnail} alt={img.alt} className="w-full object-cover aspect-[4/3] cursor-pointer" onClick={() => setImageToDisplay({image:img.image, alt:img.alt})}/>
                     </SwiperSlide>

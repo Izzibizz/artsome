@@ -1,120 +1,134 @@
 import { useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
-import { useArtistsStore } from "../store/useArtistsStore";
-import { Loading } from "../components/Loading"
-import { SwiperComp } from "../components/SwiperComp"
+import { SwiperComp } from "../components/SwiperComp";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { toSlug } from "../utils/toSlug";
+import { artistData } from "../data/artistData";
 
 export const EachArtistPage = () => {
-
-  const { singleArtist, fetchSingleArtist, artistData, loading, imageToDisplay, setBgWhite } = useArtistsStore();
-  const { id } = useParams()
-  const artistToDisplay = id.replace(/-/g, "_").toLowerCase()
+  const { id } = useParams();
+  const [singleArtist, setSingleArtist] = useState(null);
   const [prevArtist, setPrevArtist] = useState(null);
   const [nextArtist, setNextArtist] = useState(null);
-
-
-
-  useEffect(() => {
-    fetchSingleArtist(artistToDisplay);
-    setBgWhite(true)
-  }, [artistToDisplay]);
+  const [imageToDisplay, setImageToDisplay] = useState({
+    image: singleArtist?.images?.[0]?.image || "",
+    alt: singleArtist?.images?.[0]?.alt || "",
+  });
 
   useEffect(() => {
-    if (artistData.length > 0) {
-      const currentArtistIndex = artistData.findIndex(
-        (artist) => artist.name
-        .toLowerCase()
-        .normalize("NFD") 
-      .replace(/[\u0300-\u036f]/g, "") 
-      .replace(/ /g, "_") 
-      .replace(/[^a-z0-9_]/g, "")  === artistToDisplay
+    const artist = artistData.find((a) => toSlug(a.name) === id);
+    setSingleArtist(artist);
+
+    const index = artistData.findIndex((a) => toSlug(a.name) === id);
+    if (index !== -1) {
+      setPrevArtist(
+        artistData[(index - 1 + artistData.length) % artistData.length],
       );
-
-      if (currentArtistIndex === -1) return; // Check if artist exists in the array
-
-      // Correctly calculate previous and next artist indices with wrapping
-      const prevIndex = (currentArtistIndex - 1 + artistData.length) % artistData.length; // Wrap to last artist if at the start
-      const nextIndex = (currentArtistIndex + 1) % artistData.length; // Wrap to first artist if at the end
-
-      // Ensure you're correctly fetching the previous and next artists
-      setPrevArtist(artistData[prevIndex]);
-      setNextArtist(artistData[nextIndex]);
+      setNextArtist(artistData[(index + 1) % artistData.length]);
     }
-  }, [artistData, artistToDisplay]);
+  }, [id]);
 
   useEffect(() => {
-    if (singleArtist?.[0]?.images) {
-        singleArtist[0].images.forEach((img) => {
-            const preloadImage = new Image();
-            preloadImage.src = img.image; // Preload full-sized image
-        });
+    if (singleArtist?.images?.length) {
+      setImageToDisplay({
+        image: singleArtist.images[0].image,
+        alt: singleArtist.images[0].alt,
+      });
     }
-}, [singleArtist]);
+  }, [singleArtist]);
 
-  console.log(artistData)
+  useEffect(() => {  singleArtist?.images.forEach(img => {
+      const preloaded = new Image();
+      preloaded.src = img.image;
+    })})
+
+  if (!singleArtist) return <p>Artist not found</p>;
+
+  console.log(artistData, singleArtist, imageToDisplay);
 
   return (
     <section className="bg-white min-h-screen pb-10 px-6 w-screen max-w-screen overflow-hidden relative flex flex-col font-heading gap-12 animate-fadeIn">
-          {loading ? (
-            <Loading />
-          ) : (
-            singleArtist.length > 0 && (
-              <>
-            <div className=" w-11/12 laptop:w-8/12 mx-auto mt-20 laptop:mt-32 flex flex-col gap-4">
-               <div className=" flex flex-col laptop:flex-row gap-4 ">
-               <img src={imageToDisplay.image} alt={imageToDisplay.alt} className="w-full laptop:w-2/3 laptop:h-[600px] aspect-[4/3] object-cover"/>
-               <div className="w-full laptop:w-1/3 flex flex-col gap-6 laptop:gap-4 laptop:bg-light-peach laptop:p-4">
-               <SwiperComp />
-               <h3 className="text-4xl tablet:text-[50px] font-fat text-peach laptop:hidden">{singleArtist?.[0].name}</h3>
-               <ul className="text-dark-brown gap-y-2 flex flex-col">
-               <li>Year of birth: <span className="italic">{singleArtist?.[0].year_of_birth}</span></li>
-               <li>Origin: <span className="italic">{singleArtist?.[0].birthplace}</span></li>
-               <ul className="flex flex-wrap gap-x-2">
-                Techniques:
-                {singleArtist?.[0].technique.map((technique, index) => (
-                  <li key={index} className="italic ">
-                    {technique}
-                    {index < singleArtist[0].technique.length - 1 && ","}
+      {singleArtist && (
+        <>
+          <div className=" w-11/12 laptop:w-8/12 mx-auto mt-20 laptop:mt-32 flex flex-col gap-4">
+            <div className=" flex flex-col laptop:flex-row gap-4 ">
+              <img
+                src={imageToDisplay.image}
+                alt={imageToDisplay.alt}
+                className="w-full laptop:w-2/3 laptop:h-[600px] aspect-[4/3] object-cover"
+              />
+              <div className="w-full laptop:w-1/3 flex flex-col gap-6 laptop:gap-4 laptop:bg-light-peach laptop:p-4">
+                <SwiperComp
+                  singleArtist={singleArtist}
+                  setImageToDisplay={setImageToDisplay}
+                />
+                <h3 className="text-4xl tablet:text-[50px] font-fat text-peach laptop:hidden">
+                  {singleArtist?.name}
+                </h3>
+                <ul className="text-dark-brown gap-y-2 flex flex-col">
+                  <li>
+                    Year of birth:{" "}
+                    <span className="italic">
+                      {singleArtist?.year_of_birth}
+                    </span>
                   </li>
-                ))}
+                  <li>
+                    Origin:{" "}
+                    <span className="italic">{singleArtist?.birthplace}</span>
+                  </li>
+                  <ul className="flex flex-wrap gap-x-2">
+                    Techniques:
+                    {singleArtist?.technique.map((technique, index) => (
+                      <li key={index} className="italic ">
+                        {technique}
+                        {index < singleArtist.technique.length - 1 && ","}
+                      </li>
+                    ))}
+                  </ul>
+                  <li className="flex gap-1 items-center group">
+                    <MdOutlineArrowOutward className="group-hover:text-orange-500" />
+                    <a
+                      href={singleArtist?.info_link}
+                      target="_blank"
+                      className="relative after:content-[''] after:block after:w-0 after:h-[1px] after:bg-orange-500 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 group-hover:after:w-full"
+                    >
+                      {" "}
+                      Website{" "}
+                    </a>{" "}
+                  </li>
                 </ul>
-                <li className="flex gap-1 items-center group"><MdOutlineArrowOutward className="group-hover:text-orange-500"/><a href={singleArtist?.[0].info_link} target="_blank" className="relative after:content-[''] after:block after:w-0 after:h-[1px] after:bg-orange-500 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 group-hover:after:w-full"> Website </a> </li>
-               </ul>
-               </div>
-               </div>
-               <h3 className="font-fat laptop:text-[130px] text-peach absolute bottom-10 hidden laptop:block">{singleArtist?.[0].name}</h3>
-      </div>
+              </div>
+            </div>
+            <h3 className="font-fat laptop:text-[130px] text-peach absolute bottom-10 hidden laptop:block">
+              {singleArtist?.name}
+            </h3>
+          </div>
           <div className="flex justify-between mt-6 text-sm tablet:text-base">
-          <NavLink
-            to={`/artist/${prevArtist?.name
-              .toLowerCase()
-              .normalize("NFD") 
-            .replace(/[\u0300-\u036f]/g, "") 
-            .replace(/ /g, "_") 
-            .replace(/[^a-z0-9_]/g, "") 
-            }`}
-            className="text-dark-brown hover:underline"
-          >
-            ← {prevArtist?.name}
-          </NavLink>
-          <NavLink
-            to={`/artist/${nextArtist?.name
-              .toLowerCase()
-              .normalize("NFD") 
-            .replace(/[\u0300-\u036f]/g, "") 
-            .replace(/ /g, "_") 
-            .replace(/[^a-z0-9_]/g, "") 
-            }`}
-            className="text-dark-brown hover:underline"
-          >
-            {nextArtist?.name} →
-          </NavLink>
-        </div>
+            <NavLink
+              to={`/artist/${prevArtist?.name
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .replace(/ /g, "_")
+                .replace(/[^a-z0-9_]/g, "")}`}
+              className="text-dark-brown hover:underline"
+            >
+              ← {prevArtist?.name}
+            </NavLink>
+            <NavLink
+              to={`/artist/${nextArtist?.name
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .replace(/ /g, "_")
+                .replace(/[^a-z0-9_]/g, "")}`}
+              className="text-dark-brown hover:underline"
+            >
+              {nextArtist?.name} →
+            </NavLink>
+          </div>
         </>
-    ))}
-
+      )}
     </section>
-  )
-}
-
+  );
+};

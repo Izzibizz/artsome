@@ -1,0 +1,2228 @@
+export const artistData = [
+  {
+    "id": 1,
+    "name": "Eduardo Millán",
+    "birthplace": "Jerez, Spain",
+    "technique": ["Painting"],
+    "year_of_birth": 1979,
+    "info_link": "https://www.instagram.com/eduardomillanpintor",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305825/Eduardo_Mill%C3%A1n-3_wscfu9.png",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305825/Eduardo_Mill%C3%A1n-3_wscfu9.png",
+        "alt": "Artwork by Eduardo Millán"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305817/Eduardo_Mill%C3%A1n-2_jw6s1k.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305817/Eduardo_Mill%C3%A1n-2_jw6s1k.webp",
+        "alt": "Artwork by Eduardo Millán"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305821/Eduardo_Mill%C3%A1n-4_y1qu0y.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305821/Eduardo_Mill%C3%A1n-4_y1qu0y.jpg",
+        "alt": "Artwork by Eduardo Millán"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305819/Eduardo_Mill%C3%A1n-1_uzqdmc.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305819/Eduardo_Mill%C3%A1n-1_uzqdmc.jpg",
+        "alt": "Artwork by Eduardo Millán"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305815/Eduardo_Mill%C3%A1n-5_xh7x6r.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305815/Eduardo_Mill%C3%A1n-5_xh7x6r.jpg",
+        "alt": "Artwork by Eduardo Millán"
+      }
+    ],
+    "gender": "male",
+    "alive": true
+  },
+  {
+    "id": 2,
+    "name": "Nicolas Lamas",
+    "birthplace": "Lima, Peru",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1980,
+    "info_link": "https://nicolaslamas.net/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306049/nicolas-lamas-1_mcpkhl.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306049/nicolas-lamas-1_mcpkhl.jpg",
+        "alt": "Artwork by Niclas Lamas"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306045/nicolas-lamas-4_rjwcnn.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306045/nicolas-lamas-4_rjwcnn.jpg",
+        "alt": "Artwork by Niclas Lamas"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306047/Nicolas-lamas-3_uh1zs3.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306047/Nicolas-lamas-3_uh1zs3.jpg",
+        "alt": "Artwork by Niclas Lamas"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306043/Nicolas-lamas_f3ury1.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306043/Nicolas-lamas_f3ury1.webp",
+        "alt": "Artwork by Niclas Lamas"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306040/Nicolas-lamas-2_hnyk3o.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306040/Nicolas-lamas-2_hnyk3o.jpg",
+        "alt": "Artwork by Niclas Lamas"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 3,
+    "name": "M Weiss",
+    "birthplace": "Cologne, Germany",
+    "technique": ["Painting"],
+    "year_of_birth": null,
+    "info_link": "https://www.instagram.com/m.weiss.studio/?hl=en",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306083/M._Weiss-5_lunvdy.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306083/M._Weiss-5_lunvdy.jpg",
+        "alt": "Artwork by M. Weiss"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306087/M._Weiss-1_ahx1wq.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306087/M._Weiss-1_ahx1wq.jpg",
+        "alt": "Artwork by M. Weiss"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306085/M._Weiss-2_z5yec8.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306085/M._Weiss-2_z5yec8.jpg",
+        "alt": "Artwork by M. Weiss"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306080/M._Weiss-6_pifibo.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306080/M._Weiss-6_pifibo.jpg",
+        "alt": "Artwork by M. Weiss"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306076/M._Weiss-4_fdpbvj.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306076/M._Weiss-4_fdpbvj.jpg",
+        "alt": "Artwork by M. Weiss"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306078/m.weiss-3_tkhtue.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306078/m.weiss-3_tkhtue.jpg",
+        "alt": "Artwork by M. Weiss"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 4,
+    "name": "Olafur Eliasson",
+    "birthplace": "Copenhagen, Denmark",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1967,
+    "info_link": "https://www.artsy.net/artist/olafur-eliasson",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306061/olafur-eliasson_fcdwbr.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306061/olafur-eliasson_fcdwbr.jpg",
+        "alt": "Artwork by Olafur Eliasson"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306052/olafur-eliasson-2_muiens.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306052/olafur-eliasson-2_muiens.jpg",
+        "alt": "Artwork by Olafur Eliasson"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306054/Olafur-Eliasson-_tle63t.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306054/Olafur-Eliasson-_tle63t.jpg",
+        "alt": "Artwork by Olafur Eliasson"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306057/olafur-eliasson-5_wyvh9p.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306057/olafur-eliasson-5_wyvh9p.webp",
+        "alt": "Artwork by Olafur Eliasson"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306059/olafur-eliasson-4_yj8ibk.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306059/olafur-eliasson-4_yj8ibk.jpg",
+        "alt": "Artwork by Olafur Eliasson"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 5,
+    "name": "Shirin Neshat",
+    "birthplace": "Qazvin, Iran",
+    "technique": ["Photography", "Video"],
+    "year_of_birth": 1957,
+    "info_link": "https://www.artsy.net/artist/shirin-neshat",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306364/shirin-neshat-2_n6uxlv.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306364/shirin-neshat-2_n6uxlv.jpg",
+        "alt": "Artwork by Shirin Neshat"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306370/shirin-neshat_fervor_gtvim4.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306370/shirin-neshat_fervor_gtvim4.jpg",
+        "alt": "Artwork by Shirin Neshat"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306367/Shirin-Neshat_s7cr10.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306367/Shirin-Neshat_s7cr10.jpg",
+        "alt": "Artwork by Shirin Neshat"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306372/shirin-neshat-1_h1e84n.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306372/shirin-neshat-1_h1e84n.webp",
+        "alt": "Artwork by Shirin Neshat"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306359/shirin-neshat-3_re3ifb.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306359/shirin-neshat-3_re3ifb.jpg",
+        "alt": "Artwork by Shirin Neshat"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306362/shirin-neshat-5_irdieh.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306362/shirin-neshat-5_irdieh.webp",
+        "alt": "Artwork by Shirin Neshat"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 6,
+    "name": "Emma Bjurstrom",
+    "birthplace": "Uppsala, Sweden",
+    "technique": ["Painting"],
+    "year_of_birth": 1986,
+    "info_link": "https://belenius.com/artists/32-emma-bjurstrom/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305782/Emma_Bjurstrom-2_xwsbof.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305782/Emma_Bjurstrom-2_xwsbof.jpg",
+        "alt": "Artwork by Emma Bjurstrom"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305784/emma-bjustrom_jhiizo.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305784/emma-bjustrom_jhiizo.webp",
+        "alt": "Artwork by Emma Bjurstrom"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305786/Emma_Bjurstrom-2_pwpolg.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305786/Emma_Bjurstrom-2_pwpolg.webp",
+        "alt": "Artwork by Emma Bjurstrom"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305788/Emma_Bjurstrom-3_kzzon5.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305788/Emma_Bjurstrom-3_kzzon5.webp",
+        "alt": "Artwork by Emma Bjurstrom"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305790/Emma_Bjurstrom_lmtn9k.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305790/Emma_Bjurstrom_lmtn9k.webp",
+        "alt": "Artwork by Emma Bjurstrom"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 7,
+    "name": "Donna Huanca",
+    "birthplace": "Chicago, United States",
+    "technique": ["Installation", "Sculpture", "Painting"],
+    "year_of_birth": 1980,
+    "info_link": "https://www.ruaminx.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305813/Donna_Huanca-5_hxmnmf.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305813/Donna_Huanca-5_hxmnmf.jpg",
+        "alt": "Artwork by Donna Huanca"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305810/Donna_Huanca-2_ptf7v0.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305810/Donna_Huanca-2_ptf7v0.jpg",
+        "alt": "Artwork by Donna Huanca"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305804/Donna_Huanca-3_uxyrie.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305804/Donna_Huanca-3_uxyrie.jpg",
+        "alt": "Artwork by Donna Huanca"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305808/Donna_Huanca_smhcew.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305808/Donna_Huanca_smhcew.jpg",
+        "alt": "Artwork by Donna Huanca"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305806/Donna_Huanca-4_istcpc.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305806/Donna_Huanca-4_istcpc.webp",
+        "alt": "Artwork by Donna Huanca"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 8,
+    "name": "Pippaluk Lake",
+    "birthplace": "Brøndbyøster, Denmark.",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1962,
+    "info_link": "https://www.instagram.com/ollie_lucas/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306254/pipaluklake_xotgkt.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306254/pipaluklake_xotgkt.jpg",
+        "alt": "Artwork by Pippaluk Lake"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306257/pipaluk_lake_rrzx30.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306257/pipaluk_lake_rrzx30.jpg",
+        "alt": "Artwork by Pippaluk Lake"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306261/pipaluk_lake-3_hzud7j.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306261/pipaluk_lake-3_hzud7j.jpg",
+        "alt": "Artwork by Pippaluk Lake"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306263/pipaluk_lake-4_dcjrah.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306263/pipaluk_lake-4_dcjrah.jpg",
+        "alt": "Artwork by Pippaluk Lake"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306252/pipaluk_lake-5_jhgurc.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306252/pipaluk_lake-5_jhgurc.jpg",
+        "alt": "Artwork by Pippaluk Lake"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 9,
+    "name": "Stanislav Zábrodský",
+    "birthplace": "Czechia",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1996,
+    "info_link": "https://www.instagram.com/stanislav.zabrodsky/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306349/Stanislav-Zabrodsky-1_cpyvju.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306349/Stanislav-Zabrodsky-1_cpyvju.jpg",
+        "alt": "Artwork by Stanislav Zábrodský"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306352/Stanislav-Zabrodsky-2_zn9k1m.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306352/Stanislav-Zabrodsky-2_zn9k1m.jpg",
+        "alt": "Artwork by Stanislav Zábrodský"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306356/Stanislav-Zabrodsky-4_ao10pl.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306356/Stanislav-Zabrodsky-4_ao10pl.jpg",
+        "alt": "Artwork by Stanislav Zábrodský"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306354/Stanislav-Zabrodsky-3_loancu.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306354/Stanislav-Zabrodsky-3_loancu.jpg",
+        "alt": "Artwork by Stanislav Zábrodský"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306347/Srtanislav-Zabrodsky-2_qahnr3.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306347/Srtanislav-Zabrodsky-2_qahnr3.jpg",
+        "alt": "Artwork by Stanislav Zábrodský"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 10,
+    "name": "Anish Kapoor",
+    "birthplace": "Mumbai, India",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1954,
+    "info_link": "https://www.artsy.net/artist/anish-kapoor",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305658/anish-kapoor-2_tntdye.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305658/anish-kapoor-2_tntdye.jpg",
+        "alt": "Artwork by Anish Kapoor"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305476/anish-kapoor-5_brshca.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305476/anish-kapoor-5_brshca.jpg",
+        "alt": "Artwork by Anish Kapoor"
+      },   {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305475/anish-kapoor-4_drkb9n.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305475/anish-kapoor-4_drkb9n.jpg",
+        "alt": "Artwork by Anish Kapoor"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305472/anish-kapoor_iskthi.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305472/anish-kapoor_iskthi.webp",
+        "alt": "Artwork by Anish Kapoor"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305473/anish-kapoor-3_sudqxv.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305473/anish-kapoor-3_sudqxv.jpg",
+        "alt": "Artwork by Anish Kapoor"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 11,
+    "name": "Julien Parant Marquis",
+    "birthplace": "Montréal , Canada",
+    "technique": ["Installation", "Painting", "Sculpture"],
+    "year_of_birth": 1996,
+    "info_link": "https://artviewer.org/julien-parant-marquis-at-afternoon-projects/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305919/Julien-Parant-Marquis_e2zqk3.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305919/Julien-Parant-Marquis_e2zqk3.jpg",
+        "alt": "Artwork by Julien Parant Marquis "
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305916/julien-parant-marquis-2_bbcgbh.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305916/julien-parant-marquis-2_bbcgbh.jpg",
+        "alt": "Artwork by Julien Parant Marquis "
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305912/-julien-parant-marquis_vdf2e8.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305912/-julien-parant-marquis_vdf2e8.webp",
+        "alt": "Artwork by Julien Parant Marquis "
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305921/julien-parant-marquis-3_eyfurg.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305921/julien-parant-marquis-3_eyfurg.jpg",
+        "alt": "Artwork by Julien Parant Marquis "
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305914/Julien-Parant-Marquis4_jn3eky.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305914/Julien-Parant-Marquis4_jn3eky.jpg",
+        "alt": "Artwork by Julien Parant Marquis "
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 12,
+    "name": "Grace Woodcock",
+    "birthplace": "Luton, United Kingdom",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1993,
+    "info_link": "https://www.instagram.com/grakenstein/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305844/Grace_Woodcock_bkwtsx.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305844/Grace_Woodcock_bkwtsx.webp",
+        "alt": "Artwork by Grace Woodcock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305848/Grace_Woodcock.2_opwcez.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305848/Grace_Woodcock.2_opwcez.webp",
+        "alt": "Artwork by Grace Woodcock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305850/grace-woodcock-1_xy89lk.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305850/grace-woodcock-1_xy89lk.jpg",
+        "alt": "Artwork by Grace Woodcock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305852/grace_woodcock_yyrxcg.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305852/grace_woodcock_yyrxcg.jpg",
+        "alt": "Artwork by Grace Woodcock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305846/grace-woodcock-2_gdl6wq.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305846/grace-woodcock-2_gdl6wq.webp",
+        "alt": "Artwork by Grace Woodcock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305842/grace-woodcock_ceodmw.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305842/grace-woodcock_ceodmw.jpg",
+        "alt": "Artwork by Grace Woodcock"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 13,
+    "name": "Kara Walker",
+    "birthplace": "Stockton, California, United States",
+    "technique": ["Drawing", "Painting", "Silhouette"],
+    "year_of_birth": 1969,
+    "info_link": "https://www.artsy.net/artist/kara-walker",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305995/Kara_Walker_io2gqs.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305995/Kara_Walker_io2gqs.jpg",
+        "alt": "Artwork by Kara Walker"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306001/Kara_Walker-3_onkgoz.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306001/Kara_Walker-3_onkgoz.webp",
+        "alt": "Artwork by Kara Walker"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305996/Kara_Walker-4_oah95m.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305996/Kara_Walker-4_oah95m.jpg",
+        "alt": "Artwork by Kara Walker"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305999/Kara_Walker-2_vivxi2.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305999/Kara_Walker-2_vivxi2.jpg",
+        "alt": "Artwork by Kara Walker"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305992/Kara_Walker-5_qhzdo0.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305992/Kara_Walker-5_qhzdo0.jpg",
+        "alt": "Artwork by Kara Walker"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 14,
+    "name": "Lap-see Lam",
+    "birthplace": "Stockholm, Sweden",
+    "technique": ["VR", "3D", "Sculpture"],
+    "year_of_birth": 1990,
+    "info_link": "https://www.artsy.net/artist/lap-see-lam",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306023/lap-see-lam_t5t42k.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306023/lap-see-lam_t5t42k.jpg",
+        "alt": "Artwork by Lap-see Lam"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306018/lapsee-lam3_frbez4.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306018/lapsee-lam3_frbez4.jpg",
+        "alt": "Artwork by Lap-see Lam"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306021/lapsee-lam_fgrx58.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306021/lapsee-lam_fgrx58.jpg",
+        "alt": "Artwork by Lap-see Lam"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306026/lapsee-lam2_rqigmj.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306026/lapsee-lam2_rqigmj.jpg",
+        "alt": "Artwork by Lap-see Lam"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306016/lapsee-lam4_m1ncgm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306016/lapsee-lam4_m1ncgm.jpg",
+        "alt": "Artwork by Lap-see Lam"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 15,
+    "name": "Liu Xiaodong",
+    "birthplace": "Liaoning, China",
+    "technique": ["Painting"],
+    "year_of_birth": 1963,
+    "info_link": "https://www.artsy.net/artist/liu-xiaodong",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306035/Liu_Xiaodong-3_vewptq.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306035/Liu_Xiaodong-3_vewptq.jpg",
+        "alt": "Artwork by Liu Xiaodong"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306037/Liu_Xiaodong-4_trltc5.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306037/Liu_Xiaodong-4_trltc5.webp",
+        "alt": "Artwork by Liu Xiaodong"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306030/Liu_Xiaodong_og5mvk.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306030/Liu_Xiaodong_og5mvk.jpg",
+        "alt": "Artwork by Liu Xiaodong"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306033/Liu_Xiaodong-2_cin1ic.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306033/Liu_Xiaodong-2_cin1ic.jpg",
+        "alt": "Artwork by Liu Xiaodong"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306028/Liu_Xiaodong-5_zm6bpm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306028/Liu_Xiaodong-5_zm6bpm.jpg",
+        "alt": "Artwork by Liu Xiaodong"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },  
+  {
+    "id": 16,
+    "name": "Sarah Sze",
+    "birthplace": "Boston, Massachusetts, United States",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1969,
+    "info_link": "https://www.artsy.net/artist/sarah-sze",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306383/Sarah_Sze-2_q15nt9.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306383/Sarah_Sze-2_q15nt9.jpg",
+        "alt": "Sarah Sze"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306379/Sarah_Sze-4_pnfxwq.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306379/Sarah_Sze-4_pnfxwq.jpg",
+        "alt": "Sarah Sze"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306381/Sarah_Sze-1_heijkm.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306381/Sarah_Sze-1_heijkm.jpg",
+        "alt": "Sarah Sze"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306386/Sarah_Sze-5_bx4pu2.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306386/Sarah_Sze-5_bx4pu2.jpg",
+        "alt": "Sarah Sze"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306376/Sarah_Sze-3_p3meym.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306376/Sarah_Sze-3_p3meym.jpg",
+        "alt": "Sarah Sze"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 18,
+    "name": "Poppy Jones",
+    "birthplace": "London, United Kingdom",
+    "technique": ["Painting"],
+    "year_of_birth": 1985,
+    "info_link": "https://www.instagram.com/poppymjones/?hl=en",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306154/Poppy_Jones-4_wvwemw.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306154/Poppy_Jones-4_wvwemw.jpg",
+        "alt": "Poppy Jones Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306149/Poppy_Jones_t108p2.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306149/Poppy_Jones_t108p2.jpg",
+        "alt": "Poppy Jones Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306151/Poppy_Jones-2_pzyawj.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306151/Poppy_Jones-2_pzyawj.jpg",
+        "alt": "Poppy Jones Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306156/Poppy_Jones-3_rfycb8.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306156/Poppy_Jones-3_rfycb8.jpg",
+        "alt": "Poppy Jones Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306159/Poppy_Jones-5_f6wvri.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306159/Poppy_Jones-5_f6wvri.jpg",
+        "alt": "Poppy Jones Artwork"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 19,
+    "name": "Pierre Knop",
+    "birthplace": "Nancy, France",
+    "technique": ["Painting"],
+    "year_of_birth": 1982,
+    "info_link": "https://pierreknop.de/paintings/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306066/Pierre_Knop-2_t3ybeq.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306066/Pierre_Knop-2_t3ybeq.jpg",
+        "alt": "Pierre knop Painting"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306064/Pierre_Knop-5_y03kag.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306064/Pierre_Knop-5_y03kag.jpg",
+        "alt": "Pierre knop Painting"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306071/Pierre_Knop-4_zbf1zl.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306071/Pierre_Knop-4_zbf1zl.jpg",
+        "alt": "Pierre knop Painting"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306073/Pierre_Knop_bmiu4m.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306073/Pierre_Knop_bmiu4m.jpg",
+        "alt": "Pierre knop Painting"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306069/Pierre_Knop-3_f1pntl.jpg",
+        "thumbnail":  "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306069/Pierre_Knop-3_f1pntl.jpg",
+        "alt": "Pierre knop Painting"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 22,
+    "name": "Henri Rousseau",
+    "birthplace": "Laval, France",
+    "technique": ["Painting"],
+    "year_of_birth": 1844,
+    "year_of_death": 1910,
+    "info_link": "https://www.artsy.net/artist/henri-rousseau",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305904/Henri_Rousseau_sd9cz0.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305904/Henri_Rousseau_sd9cz0.jpg",
+        "alt": "Henri Rousseau Painting"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305910/Henri_Rousseau-3_weys8r.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305910/Henri_Rousseau-3_weys8r.jpg",
+        "alt": "Henri Rousseau Painting"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305908/Henri_Rousseau-4_b1mqyh.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305908/Henri_Rousseau-4_b1mqyh.jpg",
+        "alt": "Henri Rousseau Painting"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305902/Henri_Rousseau-5_fhb5ap.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305902/Henri_Rousseau-5_fhb5ap.jpg",
+        "alt": "Henri Rousseau Painting"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305906/Henri_Rousseau-2_zy6j44.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305906/Henri_Rousseau-2_zy6j44.jpg",
+        "alt": "Henri Rousseau Painting"
+      }
+    ],
+    "gender": "Male",
+    "alive": false
+  },
+  {
+    "id": 24,
+    "name": "Mikkel Orsted",
+    "birthplace": "Copenhagen, Denmark",
+    "technique": ["Drawing", "Painting", "Sculpture"],
+    "year_of_birth": 1988,
+    "info_link": "https://www.instagram.com/mikkel_orsted/?hl=en",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745479195/mikkel_orsted-6_ytcspe.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745479195/mikkel_orsted-6_ytcspe.jpg",
+        "alt": "Mikkel Orsted Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306162/Mikkel_Orsted_bwvwmm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306162/Mikkel_Orsted_bwvwmm.jpg",
+        "alt": "Mikkel Orsted Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306171/Mikkel_Orsted-4_q8dati.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306171/Mikkel_Orsted-4_q8dati.jpg",
+        "alt": "Mikkel Orsted Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306164/Mikkel_Orsted-3_iflsmg.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306164/Mikkel_Orsted-3_iflsmg.webp",
+        "alt": "Mikkel Orsted Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306167/Mikkel_Orsted-2_h5ho0w.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306167/Mikkel_Orsted-2_h5ho0w.jpg",
+        "alt": "Mikkel Orsted Artwork"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 25,
+    "name": "Matthew Barney",
+    "birthplace": "San Francisco, California, United States",
+    "technique": ["Film", "Sculpture"],
+    "year_of_birth": 1967,
+    "info_link": "https://www.artsy.net/artist/matthew-barney",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306123/Matthew_Barney_ofl6xk.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306123/Matthew_Barney_ofl6xk.jpg",
+        "alt": "Matthew Barney Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306125/Matthew_Barney_r9exvr.png",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306125/Matthew_Barney_r9exvr.png",
+        "alt": "Matthew Barney Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306120/Matthew_Barney-4_gph6e6.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306120/Matthew_Barney-4_gph6e6.webp",
+        "alt": "Matthew Barney Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306130/Matthew_Barney-1_iq7tyo.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306130/Matthew_Barney-1_iq7tyo.jpg",
+        "alt": "Matthew Barney Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306127/Matthew_Barney-2_v6dhze.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306127/Matthew_Barney-2_v6dhze.jpg",
+        "alt": "Matthew Barney Artwork"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 26,
+    "name": "Nalini Malani",
+    "birthplace": "Karachi,  Pakistan",
+    "technique": ["Painting", "Video"],
+    "year_of_birth": 1946,
+    "info_link": "https://www.artsy.net/artist/nalini-malani",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306230/Nalini_Malani-2_ga3afv.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306230/Nalini_Malani-2_ga3afv.webp",
+        "alt": "Nalini Malani Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306227/Nalini_Malani-4_gm8ku7.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306227/Nalini_Malani-4_gm8ku7.jpg",
+        "alt": "Nalini Malani Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306232/Nalini_Malani-5_hqrijt.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306232/Nalini_Malani-5_hqrijt.jpg",
+        "alt": "Nalini Malani Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306236/Nalini_Malani_ntevkw.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306236/Nalini_Malani_ntevkw.jpg",
+        "alt": "Nalini Malani Artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306234/Nalini_Malani-3_wmi2sl.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306234/Nalini_Malani-3_wmi2sl.jpg",
+        "alt": "Nalini Malani Artwork"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 27,
+    "name": "Yoko Ono",
+    "birthplace": "Tokyo, Japan",
+    "technique": ["Mixed media"],
+    "year_of_birth": 1933,
+    "info_link": "https://www.moma.org/artists/4410",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306196/Yoko_Ono_utfadz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306196/Yoko_Ono_utfadz.jpg",
+        "alt": "Yoko Ono artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306189/Yoko_Ono-4_essx7p.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306189/Yoko_Ono-4_essx7p.webp",
+        "alt": "Yoko Ono artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306194/Yoko_Ono-2_tjjnkz.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306194/Yoko_Ono-2_tjjnkz.webp",
+        "alt": "Yoko Ono artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306199/Yoko_Ono-3_nb6qon.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306199/Yoko_Ono-3_nb6qon.jpg",
+        "alt": "Yoko Ono artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306192/Yoko_Ono-5_llix6l.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306192/Yoko_Ono-5_llix6l.webp",
+        "alt": "Yoko Ono artwork"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 28,
+    "name": "Kaari Upson",
+    "birthplace": "San Bernardino, United States",
+    "technique": ["Sculpture", "Installation"],
+    "year_of_birth": 1970,
+    "info_link": "https://www.nytimes.com/2021/08/20/arts/kaari-upson-dead.html",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305928/kaari-upson-3_sev3nu.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305928/kaari-upson-3_sev3nu.webp",
+        "alt": "Kaari Upson Work"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305926/kaari-upson-1_fhwpme.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305926/kaari-upson-1_fhwpme.jpg",
+        "alt": "Kaari Upson Work"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305933/kaari-upson-4_txybnf.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305933/kaari-upson-4_txybnf.jpg",
+        "alt": "Kaari Upson Work"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305930/kaari-upson-5_jzdqpf.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305930/kaari-upson-5_jzdqpf.jpg",
+        "alt": "Kaari Upson Work"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305935/kaari_upson_hxdjxu.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305935/kaari_upson_hxdjxu.jpg",
+        "alt": "Kaari Upson Work"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305937/kaari_upson-2_ryfqoa.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305937/kaari_upson-2_ryfqoa.jpg",
+        "alt": "Kaari Upson Work"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305939/kaari-upson_a4quzf.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305939/kaari-upson_a4quzf.jpg",
+        "alt": "Kaari Upson Work"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 30,
+    "name": "Tony Cragg",
+    "birthplace": "Liverpool, United Kingdom",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1948,
+    "info_link": "https://www.tony-cragg.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306338/Tony_Cragg-5_qts7lx.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306338/Tony_Cragg-5_qts7lx.jpg",
+        "alt": "Tony Cragg artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306341/Tony_Cragg_f6f9si.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306341/Tony_Cragg_f6f9si.jpg",
+        "alt": "Tony Cragg artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306335/Tony_Cragg-4_ncm8u5.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306335/Tony_Cragg-4_ncm8u5.jpg",
+        "alt": "Tony Cragg artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306333/Tony_Cragg-3_i1tzqq.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306333/Tony_Cragg-3_i1tzqq.jpg",
+        "alt": "Tony Cragg artwork"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306331/Tony_Cragg-2_ugleab.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306331/Tony_Cragg-2_ugleab.jpg",
+        "alt": "Tony Cragg artwork"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 31,
+    "name": "Roni Horn",
+    "birthplace": "New York City, New York, United States",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1955,
+    "info_link": "https://www.artsy.net/artist/roni-horn",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306403/Roni_Horn-2_ndbswq.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306403/Roni_Horn-2_ndbswq.jpg",
+        "alt": "Roni Horn Sculpture"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306405/Roni_Horn-3_cw0r18.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306405/Roni_Horn-3_cw0r18.webp",
+        "alt": "Roni Horn Sculpture"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306410/Roni_Horn-4_ajx20o.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306410/Roni_Horn-4_ajx20o.jpg",
+        "alt": "Roni Horn Sculpture"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306415/Roni_Horn-5_b3khvm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306415/Roni_Horn-5_b3khvm.jpg",
+        "alt": "Roni Horn Sculpture"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306412/Roni_Horn_xima9t.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306412/Roni_Horn_xima9t.jpg",
+        "alt": "Roni Horn Sculpture"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 32,
+    "name": "Wangechi Mutu",
+    "birthplace": "Nairobi, Kenya",
+    "technique": ["Collage", "Sculpture"],
+    "year_of_birth": 1972,
+    "info_link": "https://www.artsy.net/artist/wangechi-mutu",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306209/Wangechi_Mutu_u7iz13.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306209/Wangechi_Mutu_u7iz13.jpg",
+        "alt": "Wangechi Mutu Art"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306211/Wangechi_Mutu-2_hojlnq.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306211/Wangechi_Mutu-2_hojlnq.jpg",
+        "alt": "Wangechi Mutu Art"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306206/Wangechi_Mutu-5_oe7bld.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306206/Wangechi_Mutu-5_oe7bld.jpg",
+        "alt": "Wangechi Mutu Art"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306204/Wangechi_Mutu-4_tijnxi.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306204/Wangechi_Mutu-4_tijnxi.jpg",
+        "alt": "Wangechi Mutu Art"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306202/Wangechi_Mutu.2_kyl0tt.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306202/Wangechi_Mutu.2_kyl0tt.webp",
+        "alt": "Wangechi Mutu Art"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 34,
+    "name": "Carrie Mae Weems",
+    "birthplace": "Portland, Oregon, United States",
+    "technique": ["Photography"],
+    "year_of_birth": 1953,
+    "info_link": "https://www.artsy.net/artist/carrie-mae-weems",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305718/Carrie_Mae_Weems_xwwapk.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305718/Carrie_Mae_Weems_xwwapk.jpg",
+        "alt": "Artwork by Carrie Mae Weems"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305720/Carrie_Mae_Weems-2_qutmzy.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305720/Carrie_Mae_Weems-2_qutmzy.jpg",
+        "alt": "Artwork by Carrie Mae Weems"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305726/Carrie_Mae_Weems-4_lppo01.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305726/Carrie_Mae_Weems-4_lppo01.jpg",
+        "alt": "Artwork by Carrie Mae Weems"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305724/Carrie_Mae_Weems-3_amzk63.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305724/Carrie_Mae_Weems-3_amzk63.jpg",
+        "alt": "Artwork by Carrie Mae Weems"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305722/Carrie_Mae_Weems-5_wvccog.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305722/Carrie_Mae_Weems-5_wvccog.jpg",
+        "alt": "Artwork by Carrie Mae Weems"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 35,
+    "name": "Collective CATPC",
+    "birthplace": "Lusanga, Democratic Republic of the Congoo",
+    "technique": ["Painting","video", "Sculpture"],
+    "year_of_birth": 2014,
+    "info_link": "https://catpc.org/home/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305754/collective.CATPC_qpvzfb.png",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305754/collective.CATPC_qpvzfb.png",
+        "alt": "Artwork by Collective CATPC"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305752/Collective_CATPC-4_einrst.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305752/Collective_CATPC-4_einrst.jpg",
+        "alt": "Artwork by Collective CATPC"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305750/Collective_CATPC-3_pvn8ts.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305750/Collective_CATPC-3_pvn8ts.jpg",
+        "alt": "Artwork by Collective CATPC"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305748/Collective_CATPC-2_qnxyku.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305748/Collective_CATPC-2_qnxyku.webp",
+        "alt": "Artwork by Collective CATPC"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305746/Collective_CATPC_qplg9g.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305746/Collective_CATPC_qplg9g.webp",
+        "alt": "Artwork by Collective CATPC"
+      }
+    ],
+    "gender": null,
+    "alive": true
+  },
+  {
+    "id": 36,
+    "name": "Kerry James Marshall",
+    "birthplace": "Birmingham, Alabama, United States",
+    "technique": ["Painting"],
+    "year_of_birth": 1955,
+    "info_link": "https://www.artsy.net/artist/kerry-james-marshall",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306006/Kerry_James_Marshall-2_cp29rl.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306006/Kerry_James_Marshall-2_cp29rl.jpg",
+        "alt": "Artwork by Kerry James Marshall"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306013/Kerry_James_Marshall_fn4or2.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306013/Kerry_James_Marshall_fn4or2.jpg",
+        "alt": "Artwork by Kerry James Marshall"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306011/Kerry_James_Marshall-5_tqixf8.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306011/Kerry_James_Marshall-5_tqixf8.webp",
+        "alt": "Artwork by Kerry James Marshall"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306008/Kerry_James_Marshall_udbhph.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306008/Kerry_James_Marshall_udbhph.webp",
+        "alt": "Artwork by Kerry James Marshall"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306004/Kerry_James_Marshall-4_ttvklm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306004/Kerry_James_Marshall-4_ttvklm.jpg",
+        "alt": "Artwork by Kerry James Marshall"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 39,
+    "name": "Do Ho Suh",
+    "birthplace": "Seoul, South Korea",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1962,
+    "info_link": "https://www.artsy.net/artist/do-ho-suh",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305793/Do_Ho_Suh_xjkp3a.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305793/Do_Ho_Suh_xjkp3a.webp", 
+        "alt": "Artwork by Do Ho Suh"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305795/Do_Ho_Suh2_to0ysm.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305795/Do_Ho_Suh2_to0ysm.webp", 
+        "alt": "Artwork by Do Ho Suh"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305797/Do_Ho_Suh-3_acdylc.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305797/Do_Ho_Suh-3_acdylc.jpg", 
+        "alt": "Artwork by Do Ho Suh"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305801/Do_Ho_Suh-5_y9gjsp.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305801/Do_Ho_Suh-5_y9gjsp.jpg", 
+        "alt": "Artwork by Do Ho Suh"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305799/Do_Ho_Suh-4_p5ocka.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305799/Do_Ho_Suh-4_p5ocka.webp", 
+        "alt": "Artwork by Do Ho Suh"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 40,
+    "name": "John Gerrard",
+    "birthplace": "Dublin, Ireland",
+    "technique": ["Digital art", "Sculpture"],
+    "year_of_birth": 1974,
+    "info_link": "https://www.artsy.net/artist/gabriel-orozco",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305897/John_Gerrard_eeq068.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305897/John_Gerrard_eeq068.jpg",
+        "alt": "Artwork by John gerrard"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745479922/John_Gerrard-6_njjxry.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745479922/John_Gerrard-6_njjxry.jpg",
+        "alt": "Artwork by John gerrard"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305895/John_Gerrard-2_e1dgtl.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305895/John_Gerrard-2_e1dgtl.jpg",
+        "alt": "Artwork by John gerrard"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305899/John_Gerrard_f9bgxz.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305899/John_Gerrard_f9bgxz.webp",
+        "alt": "Artwork by John gerrard"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305891/John_Gerrard-3_r5bfr5.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305891/John_Gerrard-3_r5bfr5.jpg",
+        "alt": "Artwork by John gerrard"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 41,
+    "name": "Alice Gong Xiaowen",
+    "birthplace": "Beijing, China",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1994,
+    "info_link": "https://alicegong.com/images",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305432/Alice_Gong_Xiaowen_jca5rn.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305432/Alice_Gong_Xiaowen_jca5rn.jpg",
+        "alt": "Artwork by Alice Gong Xiaowen"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305433/Alice_Gong_Xiaowen-4_wln3hx.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305433/Alice_Gong_Xiaowen-4_wln3hx.jpg",
+        "alt": "Artwork by Alice Gong Xiaowen"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305429/Alice_Gong_Xiaowen-2_dhpsb2.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305429/Alice_Gong_Xiaowen-2_dhpsb2.jpg",
+        "alt": "Artwork by Alice Gong Xiaowen"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305434/Alice_Gong_Xiaowen-5_y6xrze.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305434/Alice_Gong_Xiaowen-5_y6xrze.jpg",
+        "alt": "Artwork by Alice Gong Xiaowen"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305431/Alice_Gong_Xiaowen-3_zjiwit.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305431/Alice_Gong_Xiaowen-3_zjiwit.jpg",
+        "alt": "Artwork by Alice Gong Xiaowen"
+      }
+      
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 43,
+    "name": "Adrian Villar Rojas",
+    "birthplace": "Rosario, Argentina",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1980,
+    "info_link": "https://www.artsy.net/artist/adrian-villar-rojas",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305393/Adrian_Villar_Rojas-3_cbvwy6.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305393/Adrian_Villar_Rojas-3_cbvwy6.webp",
+        "alt": "Artwork by Adrian Villar Rojas"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305395/Adrian_Villar_Rojas.2_cpdwuw.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305395/Adrian_Villar_Rojas.2_cpdwuw.jpg",
+        "alt": "Artwork by Adrian Villar Rojas"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305396/Adrian_Villar_Rojas_ad8fvw.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305396/Adrian_Villar_Rojas_ad8fvw.jpg",
+        "alt": "Artwork by Adrian Villar Rojas"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305394/Adrian_Villar_Rojas-4_hrugwn.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305394/Adrian_Villar_Rojas-4_hrugwn.webp",
+        "alt": "Artwork by Adrian Villar Rojas"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305398/Adrian_Villar_Rojas-5_skwmvh.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305398/Adrian_Villar_Rojas-5_skwmvh.jpg",
+        "alt": "Artwork by Adrian Villar Rojas"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 44,
+    "name": "Abbas Akhavan",
+    "birthplace": "Tehran, Iran",
+    "technique": ["Painting"],
+    "year_of_birth": 1977 ,
+    "info_link": "https://chisenhale.org.uk/whats-on/abbas-akhavan-in-conversation-with-dan-hicks/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305382/Abbas_Akhavan-1_ydhgvz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305382/Abbas_Akhavan-1_ydhgvz.jpg",
+        "alt": "Artwork by abbas akhavan"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305381/Abbas_Akhavan-2_md8hv1.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305381/Abbas_Akhavan-2_md8hv1.jpg",
+        "alt": "Artwork by abbas akhavan"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305379/Abbas_Akhavan-5_rsg6rp.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305379/Abbas_Akhavan-5_rsg6rp.jpg",
+        "alt": "Artwork by abbas akhavan"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305380/Abbas_Akhavan-4_nvdmed.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305380/Abbas_Akhavan-4_nvdmed.jpg",
+        "alt": "Artwork by abbas akhavan"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305379/Abbas_Akhavan-3_dk5lv2.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305379/Abbas_Akhavan-3_dk5lv2.webp",
+        "alt": "Artwork by abbas akhavan"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 45,
+    "name": "Diana Al-Hadid",
+    "birthplace": "Aleppo, Syria",
+    "technique": ["Installation", "Sculpture"],
+    "year_of_birth": 1981,
+    "info_link": "http://www.dianaalhadid.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305759/Diana_Al-Hadid-2_fn3vgp.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305759/Diana_Al-Hadid-2_fn3vgp.jpg",
+        "alt": "Artwork by Diana Al-Hadid"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305763/Diana_Al-Hadid-5_pmzdzd.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305763/Diana_Al-Hadid-5_pmzdzd.jpg",
+        "alt": "Artwork by Diana Al-Hadid"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305765/Diana_Al-Hadid-1_nlt2aa.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305765/Diana_Al-Hadid-1_nlt2aa.jpg",
+        "alt": "Artwork by Diana Al-Hadid"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305761/Diana_Al-Hadid_rkpmld.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305761/Diana_Al-Hadid_rkpmld.jpg",
+        "alt": "Artwork by Diana Al-Hadid"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305757/Diana_Al-Hadid-4_ehdvng.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305757/Diana_Al-Hadid-4_ehdvng.jpg",
+        "alt": "Artwork by Diana Al-Hadid"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 46,
+    "name": "Tishan Hsu",
+    "birthplace": "Boston, United States",
+    "technique": ["Sculpture", "Installation"],
+    "year_of_birth": 1951,
+    "info_link": "https://www.instagram.com/tishanhsu/?hl=en",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745483104/Tishan_Hsu-6_h5llfg.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745483104/Tishan_Hsu-6_h5llfg.webp",
+        "alt": "Artwork by Tishan Hsu"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306219/Tishan_Hsu-3_zm2bjz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306219/Tishan_Hsu-3_zm2bjz.jpg",
+        "alt": "Artwork by Tishan Hsu"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306224/Tishan_Hsu-2_yu5auy.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306224/Tishan_Hsu-2_yu5auy.jpg",
+        "alt": "Artwork by Tishan Hsu"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306222/Tishan_Hsu-4_xwmhhz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306222/Tishan_Hsu-4_xwmhhz.jpg",
+        "alt": "Artwork by Tishan Hsu"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306217/Tishan_Hsu-5_ppcr0u.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306217/Tishan_Hsu-5_ppcr0u.jpg",
+        "alt": "Artwork by Tishan Hsu"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 49,
+    "name": "Rachel Youn",
+    "birthplace": "Abington, United States",
+    "technique": ["Installation", "Performance", "Sculpture"],
+    "year_of_birth": 1994,
+    "info_link": "https://rachelyoun.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306271/Rachel_Youn_sqy70a.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306271/Rachel_Youn_sqy70a.jpg", 
+        "alt": "Artwork by Rachel Youn"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306344/rachel_youn-1_f3toap.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306344/rachel_youn-1_f3toap.jpg", 
+        "alt": "Artwork by Rachel Youn"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306273/Rachel_Youn-4_yncaoz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306273/Rachel_Youn-4_yncaoz.jpg", 
+        "alt": "Artwork by Rachel Youn"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306266/Rachel_Youn-2_zxorus.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306266/Rachel_Youn-2_zxorus.jpg", 
+        "alt": "Artwork by Rachel Youn"
+      },      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306269/Rachel_Youn-3_wcw8ro.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306269/Rachel_Youn-3_wcw8ro.jpg", 
+        "alt": "Artwork by Rachel Youn"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 50,
+    "name": "Claudia Piepenbrock",
+    "birthplace": "Paderborn, Germany",
+    "technique": ["Painting", "Sculpture"],
+    "year_of_birth": 1990,
+    "info_link": "https://www.claudia-piepenbrock.de/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305734/claudia_piepenbrock_o1ndnl.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305734/claudia_piepenbrock_o1ndnl.jpg",
+        "alt": "Artwork by Claudia Piepenbrock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305739/Claudia_Piepenbrock-4_xb2urv.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305739/Claudia_Piepenbrock-4_xb2urv.jpg",
+        "alt": "Artwork by Claudia Piepenbrock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305730/Claudia_Piepenbrock-7_ucdmw5.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305730/Claudia_Piepenbrock-7_ucdmw5.jpg",
+        "alt": "Artwork by Claudia Piepenbrock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305736/Claudia_Piepenbrock-2_pqzppb.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305736/Claudia_Piepenbrock-2_pqzppb.jpg",
+        "alt": "Artwork by Claudia Piepenbrock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305732/Claudia_Piepenbrock.3_cwuqrk.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305732/Claudia_Piepenbrock.3_cwuqrk.jpg",
+        "alt": "Artwork by Claudia Piepenbrock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305741/Claudia_Piepenbrock-5_wvmdwg.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305741/Claudia_Piepenbrock-5_wvmdwg.jpg",
+        "alt": "Artwork by Claudia Piepenbrock"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305737/Claudia_Piepenbrock-3_tampii.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305737/Claudia_Piepenbrock-3_tampii.jpg",
+        "alt": "Artwork by Claudia Piepenbrock"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 52,
+    "name": "Alison Wilding",
+    "birthplace": "Blackburn, United Kingdom",
+    "technique": ["Sculpture", "Drawing"],
+    "year_of_birth": 1948,
+    "info_link": "https://www.instagram.com/alisonrewilding/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305458/Alison_Wilding-2_yyrtsq.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305458/Alison_Wilding-2_yyrtsq.jpg",
+        "alt": "Artwork by Alison Wilding"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305456/alison_wilding_dreyz7.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305456/alison_wilding_dreyz7.jpg",
+        "alt": "Artwork by Alison Wilding"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305455/Alison_Wilding-1_qkqsd5.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305455/Alison_Wilding-1_qkqsd5.jpg",
+        "alt": "Artwork by Alison Wilding"
+      },   {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305454/Alison_Wilding-3_cnpwct.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305454/Alison_Wilding-3_cnpwct.jpg",
+        "alt": "Artwork by Alison Wilding"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305451/Alison_Wilding-5_mgdnbm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305451/Alison_Wilding-5_mgdnbm.jpg",
+        "alt": "Artwork by Alison Wilding"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 53,
+    "name": "Michael Johansson",
+    "birthplace": "Trollhättan, Sweden",
+    "technique": ["Sculpture", "Installation"],
+    "year_of_birth": 1975,
+    "info_link": "https://www.michaeljohansson.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306145/Michael_Johansson-3_p6b0nr.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306145/Michael_Johansson-3_p6b0nr.jpg",
+        "alt": "Artwork by Michael Johansson"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306141/Michael_Johansson-4_vepg76.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306141/Michael_Johansson-4_vepg76.webp",
+        "alt": "Artwork by Michael Johansson"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306138/michael_johansson_mc5xcc.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306138/michael_johansson_mc5xcc.jpg",
+        "alt": "Artwork by Michael Johansson"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306143/Michael_Johansson-5_t5cdu2.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306143/Michael_Johansson-5_t5cdu2.jpg",
+        "alt": "Artwork by Michael Johansson"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306132/Michael_Johansson-2_zrzffa.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306132/Michael_Johansson-2_zrzffa.jpg",
+        "alt": "Artwork by Michael Johansson"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 54,
+    "name": "Ernesto Burgos",
+    "birthplace": "Santa Clara, California, The United States",
+    "technique": ["Painting", "Sculpture"],
+    "year_of_birth": 1979,
+    "info_link": "https://www.ernestoburgos.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305834/Ernesto_Burgos-2_zndcso.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305834/Ernesto_Burgos-2_zndcso.jpg",
+        "alt": "Artwork by Ernesto Burgos"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305832/Ernesto_Burgos-1_v7jfnh.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305832/Ernesto_Burgos-1_v7jfnh.webp",
+        "alt": "Artwork by Ernesto Burgos"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305831/Ernesto_Burgos-5_ga5yaa.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305831/Ernesto_Burgos-5_ga5yaa.jpg",
+        "alt": "Artwork by Ernesto Burgos"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305837/Ernesto_Burgos-3_me6req.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305837/Ernesto_Burgos-3_me6req.jpg",
+        "alt": "Artwork by Ernesto Burgos"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305828/Ernesto_Burgos-4_ifjsua.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305828/Ernesto_Burgos-4_ifjsua.jpg",
+        "alt": "Artwork by Ernesto Burgos"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305839/ernesto_burgos_ixjiob.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305839/ernesto_burgos_ixjiob.jpg",
+        "alt": "Artwork by Ernesto Burgos"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 55,
+    "name": "Hanne Friis",
+    "birthplace": "Oslo, Norway",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1972,
+    "info_link": "https://www.hannefriis.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305865/Hanne_Friis-3_lpbu08.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305865/Hanne_Friis-3_lpbu08.jpg",
+        "alt": "Artwork by Hanne Friis"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305863/Hanne_Friis-4_h9vbze.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305863/Hanne_Friis-4_h9vbze.jpg",
+        "alt": "Artwork by Hanne Friis"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305862/Hanne_Friis_ue4m26.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305862/Hanne_Friis_ue4m26.webp",
+        "alt": "Artwork by Hanne Friis"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305857/hanne_friis_d7f71m.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305857/hanne_friis_d7f71m.jpg",
+        "alt": "Artwork by Hanne Friis"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305855/Hanne_Friis-5_m5tjxx.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305855/Hanne_Friis-5_m5tjxx.jpg",
+        "alt": "Artwork by Hanne Friis"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305859/Hanne_Friis-2_c4qtuv.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305859/Hanne_Friis-2_c4qtuv.jpg",
+        "alt": "Artwork by Hanne Friis"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 56,
+    "name": "Agnes Martin",
+    "birthplace": "Macklin, Saskatchewan, Canada",
+    "technique": ["Painting"],
+    "year_of_birth": 1912,
+    "year_of_death": 2004,
+    "info_link": "https://www.artsy.net/artist/agnes-martin",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305417/Agnes_Martin_k0cwpu.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305417/Agnes_Martin_k0cwpu.jpg",
+        "alt": "Artwork by Agnes Martin"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305418/Agnes_Martin-2_qawthx.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305418/Agnes_Martin-2_qawthx.jpg",
+        "alt": "Artwork by Agnes Martin"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305413/Agnes_Martin-5_teilqw.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305413/Agnes_Martin-5_teilqw.webp",
+        "alt": "Artwork by Agnes Martin"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305412/Agnes_Martin-3_rii0j9.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305412/Agnes_Martin-3_rii0j9.jpg",
+        "alt": "Artwork by Agnes Martin"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305414/Agnes_Martin.2_l135gz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305414/Agnes_Martin.2_l135gz.jpg",
+        "alt": "Artwork by Agnes Martin"
+      }
+    ],
+    "gender": "Female",
+    "alive": false
+  },
+  {
+    "id": 57,
+    "name": "Helen Frankenthaler",
+    "birthplace": "Manhattan, New York City, New York, United States",
+    "technique": ["Painting"],
+    "year_of_birth": 1928,
+    "year_of_death": 2011,
+    "info_link": "https://www.guggenheim.org/artwork/artist/helen-frankenthaler",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305873/Helen_Frankenthaler_jfhgnc.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305873/Helen_Frankenthaler_jfhgnc.webp",
+        "alt": "Artwork by Helen Frankenthaler"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305869/Helen_Frankenthaler-4_i7obod.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305869/Helen_Frankenthaler-4_i7obod.jpg",
+        "alt": "Artwork by Helen Frankenthaler"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305877/Helen_Frankenthaler-5_ih1gkf.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305877/Helen_Frankenthaler-5_ih1gkf.jpg",
+        "alt": "Artwork by Helen Frankenthaler"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305871/Helen_Frankenthaler-3_dkszhx.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305871/Helen_Frankenthaler-3_dkszhx.jpg",
+        "alt": "Artwork by Helen Frankenthaler"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305875/Helen_Frankenthaler-2_l7fit1.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305875/Helen_Frankenthaler-2_l7fit1.jpg",
+        "alt": "Artwork by Helen Frankenthaler"
+      }
+    ],
+    "gender": "Female",
+    "alive": false
+  },
+  {
+    "id": 58,
+    "name": "Arlene Shechet",
+    "birthplace": "New York, United States",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1951 ,
+    "info_link": "https://mickalenethomas.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305694/Arlene_Shechet_uro1ay.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305694/Arlene_Shechet_uro1ay.webp",
+        "alt": "Artwork by Arlene Shechet"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305692/Arlene_Shechet-5_g6dugr.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305692/Arlene_Shechet-5_g6dugr.webp",
+        "alt": "Artwork by Arlene Shechet"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305696/Arlene_Shechet2_pmjywr.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305696/Arlene_Shechet2_pmjywr.jpg",
+        "alt": "Artwork by Arlene Shechet"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305700/Arlene_Shechet_xscf1z.png",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305700/Arlene_Shechet_xscf1z.png",
+        "alt": "Artwork by Arlene Shechet"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305698/Arlene_Shechet-4_yvd42q.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305698/Arlene_Shechet-4_yvd42q.jpg",
+        "alt": "Artwork by Arlene Shechet"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 61,
+    "name": "Jachym Fleig",
+    "birthplace": "Villingen-Schwenningen, Germany",
+    "technique": ["Sculpture", "Installation"],
+    "year_of_birth": 1970,
+    "info_link": "https://jachymfleig.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305944/Jachym_Fleig.2_cfakbn.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305944/Jachym_Fleig.2_cfakbn.jpg",
+        "alt": "Artwork by Jachym Fleig"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305951/Jachym_Fleig-5_jwqmet.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305951/Jachym_Fleig-5_jwqmet.jpg",
+        "alt": "Artwork by Jachym Fleig"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305948/Jachym_Fleig-1_tq6qat.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305948/Jachym_Fleig-1_tq6qat.jpg",
+        "alt": "Artwork by Jachym Fleig"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305947/jachym_fleig_mlzriw.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305947/jachym_fleig_mlzriw.jpg",
+        "alt": "Artwork by Jachym Fleig"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305942/Jachym_Fleig-4_qsiiqj.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305942/Jachym_Fleig-4_qsiiqj.jpg",
+        "alt": "Artwork by Jachym Fleig"
+      }
+
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 62,
+    "name": "Marguerite Humeau",
+    "birthplace": "France",
+    "technique": ["Sculpture", "Installation"],
+    "year_of_birth": 1986,
+    "info_link": "https://www.whitecube.com/artists/marguerite-humeau",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306115/Marguerite_Humeau-5_ct7znh.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306115/Marguerite_Humeau-5_ct7znh.jpg",
+        "alt": "Artwork by Marguerite Humeau"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306117/Marguerite_Humeau-6_lqfu5c.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306117/Marguerite_Humeau-6_lqfu5c.jpg",
+        "alt": "Artwork by Marguerite Humeau"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306113/Marguerite_Humeau-3_rlkmgg.png",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306113/Marguerite_Humeau-3_rlkmgg.png",
+        "alt": "Artwork by Marguerite Humeau"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306108/Marguerite_Humeau-2_d9oght.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306108/Marguerite_Humeau-2_d9oght.webp",
+        "alt": "Artwork by Marguerite Humeau"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306110/Marguerite_Humeau-4_fim4yj.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306110/Marguerite_Humeau-4_fim4yj.webp",
+        "alt": "Artwork by Marguerite Humeau"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306106/Marguerite_Humeau_ir7fdy.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306106/Marguerite_Humeau_ir7fdy.jpg",
+        "alt": "Artwork by Marguerite Humeau"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306103/Marguerite_Humeau-7_lffphs.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306103/Marguerite_Humeau-7_lffphs.jpg",
+        "alt": "Artwork by Marguerite Humeau"
+      }
+    
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 64,
+    "name": "Rachel De Joode",
+    "birthplace": "Amersfoort, Netherlands",
+    "technique": ["Sculpture", "Painting"],
+    "year_of_birth": 1979,
+    "info_link": "https://https://racheldejoode.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306279/Rachel_De_Joode-1_krxv5p.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306279/Rachel_De_Joode-1_krxv5p.jpg",
+        "alt": "Artwork by Rachel De Joode"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306284/Rachel_De_Joode-4_ypnqde.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306284/Rachel_De_Joode-4_ypnqde.jpg",
+        "alt": "Artwork by Rachel De Joode"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306286/Rachel_De_Joode-3_gcedme.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306286/Rachel_De_Joode-3_gcedme.jpg",
+        "alt": "Artwork by Rachel De Joode"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306288/Rachel_De_Joode-5_z8zpop.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306288/Rachel_De_Joode-5_z8zpop.jpg",
+        "alt": "Artwork by Rachel De Joode"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306281/Rachel_De_Joode-2_ppgrot.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306281/Rachel_De_Joode-2_ppgrot.jpg",
+        "alt": "Artwork by Rachel De Joode"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306277/Rachel_De_Joode_bw9jzq.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306277/Rachel_De_Joode_bw9jzq.webp",
+        "alt": "Artwork by Rachel De Joode"
+      }
+  
+      
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 65,
+    "name": "Joyce Joumaa",
+    "birthplace": "Beirut, Lebanon",
+    "technique": ["Film", "Video"],
+    "year_of_birth": 1990,
+    "info_link": "https://joycejoumaa.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305975/Joyce_Joumaa-2_bwqbz9.png",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305975/Joyce_Joumaa-2_bwqbz9.png",
+        "alt": "Artwork by Joyce Joumaa"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305972/Joyce_Joumaa-4_ngm0t1.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305972/Joyce_Joumaa-4_ngm0t1.jpg",
+        "alt": "Artwork by Joyce Joumaa"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305970/Joyce_Joumaa-5_sjwhp4.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305970/Joyce_Joumaa-5_sjwhp4.jpg",
+        "alt": "Artwork by Joyce Joumaa"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305968/Joyce_Joumaa_mf3sxd.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305968/Joyce_Joumaa_mf3sxd.jpg",
+        "alt": "Artwork by Joyce Joumaa"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305966/Joyce_Joumaa-3_jq18vj.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305966/Joyce_Joumaa-3_jq18vj.jpg",
+        "alt": "Artwork by Joyce Joumaa"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 67,
+    "name": "Lili Dujourie",
+    "birthplace": "Roeselare, Belgium",
+    "technique": ["Sculpture", "Painting"],
+    "year_of_birth": 1941,
+    "info_link": "https://lilidujourie.be/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305954/lili-dujourie_rnr6y8.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305954/lili-dujourie_rnr6y8.jpg",
+        "alt": "Artwork by Lili Dujourie"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305956/Lili_Dujourie_xfh2zo.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305956/Lili_Dujourie_xfh2zo.jpg",
+        "alt": "Artwork by Lili Dujourie"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305958/Lili_Dujourie-2_sneasv.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305958/Lili_Dujourie-2_sneasv.jpg",
+        "alt": "Artwork by Lili Dujourie"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305963/Lili_Dujourie-5_fqdyuc.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305963/Lili_Dujourie-5_fqdyuc.jpg",
+        "alt": "Artwork by Lili Dujourie"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745484637/lili-dujourie-6_nn36kh.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745484637/lili-dujourie-6_nn36kh.jpg",
+        "alt": "Artwork by Lili Dujourie"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  }
+  ,
+  {
+    "id": 68,
+    "name": "Vera Kox",
+    "birthplace": "Frankfurt, Germany",
+    "technique": ["Sculpture", "Painting"],
+    "year_of_birth": 1984,
+    "info_link": "https://verakox.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306328/Vera_Kox_z2gdma.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306328/Vera_Kox_z2gdma.jpg",
+        "alt": "Artwork by Vera Kox"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306292/Vera_Kox-1_tb66ir.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306292/Vera_Kox-1_tb66ir.jpg",
+        "alt": "Artwork by Vera Kox"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306294/Vera_Kox-3_ldeltc.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306294/Vera_Kox-3_ldeltc.jpg",
+        "alt": "Artwork by Vera Kox"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306322/Vera_Kox-4_vvfmdr.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306322/Vera_Kox-4_vvfmdr.jpg",
+        "alt": "Artwork by Vera Kox"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306325/Vera_Kox-5_n3ylf2.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306325/Vera_Kox-5_n3ylf2.jpg",
+        "alt": "Artwork by Vera Kox"
+      }
+     
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 69,
+    "name": "Sara Bjarland",
+    "birthplace": "Helsinki, Finland",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1981,
+    "info_link": "https://sarabjarland.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306390/sara_bjarland_s7r6ac.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306390/sara_bjarland_s7r6ac.jpg",
+        "alt": "Artwork by Sara Bjarland"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306399/Sara_Bjarland-5_cvqohm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306399/Sara_Bjarland-5_cvqohm.jpg",
+        "alt": "Artwork by Sara Bjarland"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306397/sara-bjarland_bzhfis.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306397/sara-bjarland_bzhfis.webp",
+        "alt": "Artwork by Sara Bjarland"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306395/Sara_Bjarland-4_rxth6d.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306395/Sara_Bjarland-4_rxth6d.jpg",
+        "alt": "Artwork by Sara Bjarland"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306392/Sara_Bjarland-3_szl8z3.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306392/Sara_Bjarland-3_szl8z3.jpg",
+        "alt": "Artwork by Sara Bjarland"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 70,
+    "name": "Anne-Marie Laureys",
+    "birthplace": "Beveren Waas, Belgium",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1962,
+    "info_link": "https://www.annemarielaureys.com/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305676/anne-marie-laureys_ti2hcm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305676/anne-marie-laureys_ti2hcm.jpg",
+        "alt": "Artwork by Anne-Marie Laureys"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305681/Anne-Marie_Laureys-2_jz5ozb.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305681/Anne-Marie_Laureys-2_jz5ozb.jpg",
+        "alt": "Artwork by Anne-Marie Laureys"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305679/anne-marie-laureys-2_evdyh6.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305679/anne-marie-laureys-2_evdyh6.webp",
+        "alt": "Artwork by Anne-Marie Laureys"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305677/anne-marie_laureys_d4wn4a.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305677/anne-marie_laureys_d4wn4a.jpg",
+        "alt": "Artwork by Anne-Marie Laureys"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305674/Anne-Marie-Laureys-Courtesy-of-Jason-Jacques_jv7jmm.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305674/Anne-Marie-Laureys-Courtesy-of-Jason-Jacques_jv7jmm.jpg",
+        "alt": "Artwork by Anne-Marie Laureys"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 71,
+    "name": "Jeremy Everett",
+    "birthplace": "Colorado, United States",
+    "technique": ["Sculpture", "Painting", "Photography"],
+    "year_of_birth": 1979,
+    "info_link": "https://www.instagram.com/_jeremyeverett/?hl=en",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305880/Jeremy_Everett-4_tbbmxv.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305880/Jeremy_Everett-4_tbbmxv.jpg",
+        "alt": "Artwork by Jeremy Everett"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305888/jeremy-everett-photo_cop8o0.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305888/jeremy-everett-photo_cop8o0.jpg",
+        "alt": "Artwork by Jeremy Everett"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305886/jeremy-everett-installation_omo6vt.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305886/jeremy-everett-installation_omo6vt.jpg",
+        "alt": "Artwork by Jeremy Everett"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305882/Jeremy_Everett-3_zxxmzu.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305882/Jeremy_Everett-3_zxxmzu.jpg",
+        "alt": "Artwork by Jeremy Everett"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305884/jeremy_everett_t6yuhp.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305884/jeremy_everett_t6yuhp.jpg",
+        "alt": "Artwork by Jeremy Everett"
+      }
+    ],
+    "gender": "Male",
+    "alive": true
+  },
+  {
+    "id": 72,
+    "name": "Daiga Grantina",
+    "birthplace": "Saldus, Latvia",
+    "technique": ["Sculpture"],
+    "year_of_birth": 1985,
+    "info_link": "https://emalin.co.uk/artists/daiga-grantina",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305770/daiga_grantina_mxnbvk.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305770/daiga_grantina_mxnbvk.jpg",
+        "alt": "Artwork by Daiga Grantina"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305773/daiga_grantina-2_ikyc1o.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305773/daiga_grantina-2_ikyc1o.webp",
+        "alt": "Artwork by Daiga Grantina"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305767/Daiga-Grantina-at-Z33_3_uutiyl.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305767/Daiga-Grantina-at-Z33_3_uutiyl.jpg",
+        "alt": "Artwork by Daiga Grantina"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305775/daiga_grantina-1_ggxuok.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305775/daiga_grantina-1_ggxuok.jpg",
+        "alt": "Artwork by Daiga Grantina"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305777/daiga_gandtina_jfhtwn.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305777/daiga_gandtina_jfhtwn.webp",
+        "alt": "Artwork by Daiga Grantina"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305779/daiga_grantina-2_ba2zbg.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305779/daiga_grantina-2_ba2zbg.jpg",
+        "alt": "Artwork by Daiga Grantina"
+      }
+    ],
+
+    
+    "gender": "Female",
+    "alive": true
+  },
+  {
+    "id": 73,
+    "name": "Pakui Hardware",
+    "birthplace": "Lithuania",
+    "technique": ["Sculpture", "Installation"],
+    "year_of_birth": 2014,
+    "info_link": "https://www.pakuihardware.org/",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306249/pakui-hardware-3_zjkd81.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306249/pakui-hardware-3_zjkd81.jpg",
+        "alt": "Artwork by Pakui Hardware"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306247/pakui_hardware_1_xevrop.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306247/pakui_hardware_1_xevrop.jpg",
+        "alt": "Artwork by Pakui Hardware"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306244/pakui-hardware-2_fo8dyh.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306244/pakui-hardware-2_fo8dyh.jpg",
+        "alt": "Artwork by Pakui Hardware"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306242/pakui_hardware-1_qirr1w.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306242/pakui_hardware-1_qirr1w.jpg",
+        "alt": "Artwork by Pakui Hardware"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745306240/pakui_hardware_hftwxc.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745306240/pakui_hardware_hftwxc.jpg",
+        "alt": "Artwork by Pakui Hardware"
+      }
+    ],
+    "gender": null,
+    "alive": true
+  },
+  {
+    "id": 73,
+    "name": "Mariko Mori",
+    "birthplace": "Tokyo, Japan",
+    "technique": ["Sculpture", "Installation"],
+    "year_of_birth": 1967,
+    "info_link": "https://www.skny.com/artists/mariko-mori",
+    "images": [
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305989/Mariko_Mori-4_helfld.png",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305989/Mariko_Mori-4_helfld.png",
+        "alt": "Artwork by Mariko Mori"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305985/Mariko_Mori_f0myny.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305985/Mariko_Mori_f0myny.jpg",
+        "alt": "Artwork by Mariko Mori"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305983/mariko-mori2_ylcuyt.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305983/mariko-mori2_ylcuyt.jpg",
+        "alt": "Artwork by Mariko Mori"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305987/Mariko_Mori-3_y6dixg.png",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305987/Mariko_Mori-3_y6dixg.png",
+        "alt": "Artwork by Mariko Mori"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305980/mariko-mori_zcg0oz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305980/mariko-mori_zcg0oz.jpg",
+        "alt": "Artwork by Mariko Mori"
+      },
+      {
+        "image": "https://res.cloudinary.com/dewmyq6c0/image/upload/v1745305978/mariko-mori-3_wav7bp.webp",
+        "thumbnail": "https://res.cloudinary.com/dewmyq6c0/image/upload/t_w-150/v1745305978/mariko-mori-3_wav7bp.webp",
+        "alt": "Artwork by Mariko Mori"
+      }
+    ],
+    "gender": "Female",
+    "alive": true
+  }
+  
+]
